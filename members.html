@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Members</title>
+
+  <style>
+    :root {
+      --bg: #04040a;
+      --panel: rgba(22, 13, 47, 0.92);
+      --panel-top: rgba(28, 18, 58, 0.96);
+      --line: rgba(122, 84, 255, 0.9);
+      --line-soft: rgba(167, 142, 255, 0.18);
+      --text: #f7f3ff;
+      --muted: #ae9bc9;
+      --accent: #ece57f;
+      --accent-soft: #d0acee;
+      --shadow: 0 18px 54px rgba(0, 0, 0, 0.34);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      padding: 54px 34px 72px;
+    }
+
+    .wrap {
+      max-width: 1680px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(54px, 7vw, 70px);
+      line-height: 0.96;
+      letter-spacing: -0.05em;
+      font-weight: 300;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    .page-head {
+      margin-bottom: 34px;
+    }
+
+    .tab {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 0 0 10px;
+      border-radius: 0;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 0;
+      border-bottom: 1px solid transparent;
+      color: var(--accent-soft);
+      background: transparent;
+      cursor: pointer;
+      transition: color 0.18s ease, border-color 0.18s ease;
+    }
+
+    .tab:hover {
+      color: var(--text);
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 38px;
+      margin-top: 42px;
+    }
+
+    .tab.active {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .members-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 174px;
+      padding: 26px;
+      border-radius: 18px;
+      background:
+        linear-gradient(180deg, var(--panel-top), rgba(9, 7, 18, 0.98));
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: #9e7fff;
+      box-shadow: 0 22px 58px rgba(0, 0, 0, 0.42);
+    }
+
+    .card-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 120px;
+      text-decoration: none;
+    }
+
+    .card-link img {
+      max-width: 100%;
+      max-height: 88px;
+      object-fit: contain;
+      filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.32));
+    }
+
+    .logo-fallback {
+      color: var(--text);
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      text-align: center;
+    }
+
+    .empty-state {
+      padding: 28px 0;
+    }
+
+    .empty-state p + p {
+      margin-top: 12px;
+    }
+
+    .page-footer {
+      margin-top: 38px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(167, 142, 255, 0.18);
+      text-align: center;
+    }
+
+    .page-footer a {
+      color: var(--accent-soft);
+      font-size: 15px;
+      text-decoration: none;
+      transition: color 0.18s ease;
+    }
+
+    .page-footer a:hover {
+      color: var(--accent);
+    }
+
+    @media (max-width: 1450px) {
+      .members-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .members-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
+      body {
+        padding: 32px 18px 48px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .tabs {
+        gap: 22px;
+        margin-top: 28px;
+      }
+
+      .members-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .card {
+        min-height: 154px;
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .members-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="page-head">
+      <h1>Members</h1>
+      <div class="tabs" id="tier-tabs" role="tablist" aria-label="Member tiers"></div>
+    </section>
+
+    <section id="members-content"></section>
+
+    <footer class="page-footer">
+      <a href="https://airtable.com/apptcH0H3OgfKEZzP/pagZdLQ8zcqQvqYyM/form" target="_blank" rel="noopener">If something doesn't look right, please submit a request via this form.</a>
+    </footer>
+  </main>
+
+  <script src="members-data.js"></script>
+  <script>
+    (function () {
+      const data = window.MEMBERS_DATA || { updatedAt: null, intro: "", tiers: [] };
+      const tabsRoot = document.getElementById("tier-tabs");
+      const contentRoot = document.getElementById("members-content");
+      const tiers = Array.isArray(data.tiers) ? data.tiers : [];
+
+      if (!tiers.length) {
+        contentRoot.innerHTML =
+          '<div class="empty-state">' +
+            '<p>No members have been generated yet.</p>' +
+            '<p>Run <strong><code>node scripts/build-members.mjs --sample</code></strong> for sample content, or configure Airtable and run <strong><code>node scripts/build-members.mjs</code></strong>.</p>' +
+          '</div>';
+        return;
+      }
+
+      let activeTier = tiers[0].slug;
+
+      function renderTabs() {
+        tabsRoot.innerHTML = tiers.map((tier) => (
+          '<button class="tab' + (tier.slug === activeTier ? ' active' : '') + '" type="button" data-tier="' + escapeAttr(tier.slug) + '" role="tab" aria-selected="' + (tier.slug === activeTier ? 'true' : 'false') + '">' +
+            escapeHtml(tier.label) +
+          '</button>'
+        )).join("");
+
+        tabsRoot.querySelectorAll("[data-tier]").forEach((button) => {
+          button.addEventListener("click", function () {
+            activeTier = button.getAttribute("data-tier");
+            renderTabs();
+            renderCards();
+          });
+        });
+      }
+
+      function renderCards() {
+        const tier = tiers.find((entry) => entry.slug === activeTier) || tiers[0];
+
+        if (!tier.members.length) {
+          contentRoot.innerHTML =
+            '<div class="empty-state"><p>No members are currently available in this tier.</p></div>';
+          return;
+        }
+
+        const cards = tier.members.map((member) => {
+          const content = member.logoPath
+            ? '<img src="' + escapeAttr(member.logoPath) + '" alt="' + escapeAttr(member.name + ' logo') + '" loading="lazy">'
+            : '<div class="logo-fallback">' + escapeHtml(member.name) + '</div>';
+
+          const href = member.website ? ' href="' + escapeAttr(member.website) + '" target="_blank" rel="noopener"' : "";
+          const tagNameOpen = member.website ? '<a class="card-link"' + href + '>' : '<div class="card-link">';
+          const tagNameClose = member.website ? '</a>' : '</div>';
+
+          return (
+            '<article class="card">' +
+              tagNameOpen +
+                content +
+              tagNameClose +
+            '</article>'
+          );
+        }).join("");
+
+        contentRoot.innerHTML = '<div class="members-grid">' + cards + '</div>';
+      }
+
+      renderTabs();
+      renderCards();
+
+      function escapeHtml(value) {
+        return String(value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+
+      function escapeAttr(value) {
+        return escapeHtml(value);
+      }
+    })();
+  </script>
+</body>
+</html>

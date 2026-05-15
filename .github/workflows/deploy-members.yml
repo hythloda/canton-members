@@ -1,0 +1,52 @@
+name: Deploy Members
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12 * * 1"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+      AIRTABLE_BASE_ID: apptcH0H3OgfKEZzP
+      AIRTABLE_TABLE_ID: tblhhsanKJmjJtXbE
+      AIRTABLE_VIEW: ""
+      AIRTABLE_NAME_FIELD: Member Name
+      AIRTABLE_TIER_FIELD: Type
+      AIRTABLE_LOGO_FIELD: Logo
+      AIRTABLE_LOGO_APPROVED_FIELD: PR/Logo Usage
+      AIRTABLE_APPROVED_VALUES: yes
+      AIRTABLE_WEBSITE_ENABLED_FIELD: ""
+      AIRTABLE_URL_FIELD: Website
+      AIRTABLE_DESCRIPTION_FIELD: Address
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - run: node scripts/build-members.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

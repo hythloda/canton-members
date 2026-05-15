@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Five North",
+    "tier": "Premier",
+    "website": "https://example.com/five-north",
+    "description": "Strategic member supporting capital markets innovation."
+  },
+  {
+    "name": "BNY",
+    "tier": "Premier",
+    "website": "https://example.com/bny",
+    "description": "Global financial infrastructure and custody services."
+  },
+  {
+    "name": "Digital Asset",
+    "tier": "Premier",
+    "website": "https://example.com/digital-asset",
+    "description": "Technology provider for regulated digital market infrastructure."
+  },
+  {
+    "name": "Tradeweb",
+    "tier": "General",
+    "website": "https://example.com/tradeweb",
+    "description": "Electronic marketplaces and workflow solutions."
+  },
+  {
+    "name": "Obsidian Systems",
+    "tier": "Associate",
+    "website": "https://example.com/obsidian-systems",
+    "description": "Engineering and systems implementation partner."
+  }
+]
