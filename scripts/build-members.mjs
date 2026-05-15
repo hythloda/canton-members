@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import fs from "node:fs/promises";
+import fsSync from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -8,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, "..");
 const sampleArg = process.argv.includes("--sample");
+const logoCachePath = path.join(rootDir, ".members-logo-cache.json");
 
 async function main() {
   const env = await loadEnvFile(path.join(rootDir, ".env.members"));
@@ -19,7 +21,8 @@ async function main() {
   }
 
   const config = getConfig();
-  const rawMembers = sampleArg ? await loadSampleMembers() : await loadAirtableMembers(config);
+  const logoCache = await loadLogoCache();
+  const rawMembers = sampleArg ? await loadSampleMembers() : await loadAirtableMembers(config, logoCache);
   const normalized = normalizeMembers(rawMembers);
   const tiers = buildTiers(normalized);
 
@@ -34,6 +37,8 @@ async function main() {
     "utf8"
   );
 
+  await saveLogoCache(logoCache);
+
   console.log(`Wrote members-data.js with ${normalized.length} members across ${tiers.length} tiers.`);
 }
 
@@ -46,6 +51,7 @@ function getConfig() {
     nameField: process.env.AIRTABLE_NAME_FIELD || "Member Name",
     tierField: process.env.AIRTABLE_TIER_FIELD || "Type",
     logoField: process.env.AIRTABLE_LOGO_FIELD || "Logo",
+    logoModifiedField: process.env.AIRTABLE_LOGO_MODIFIED_FIELD || "Modified",
     logoApprovedField: process.env.AIRTABLE_LOGO_APPROVED_FIELD || process.env.AIRTABLE_APPROVED_FIELD || "PR/Logo Usage",
     websiteEnabledField: process.env.AIRTABLE_WEBSITE_ENABLED_FIELD || "",
     urlField: process.env.AIRTABLE_URL_FIELD || "Website",
@@ -67,7 +73,7 @@ async function loadSampleMembers() {
   return JSON.parse(contents);
 }
 
-async function loadAirtableMembers(config) {
+async function loadAirtableMembers(config, logoCache) {
   const missing = [];
 
   if (!config.token) missing.push("AIRTABLE_TOKEN");
@@ -109,7 +115,7 @@ async function loadAirtableMembers(config) {
     const payload = await response.json();
 
     for (const record of payload.records || []) {
-      allRecords.push(await mapRecord(record, config));
+      allRecords.push(await mapRecord(record, config, logoCache));
     }
 
     offset = payload.offset || "";
@@ -118,7 +124,7 @@ async function loadAirtableMembers(config) {
   return allRecords;
 }
 
-async function mapRecord(record, config) {
+async function mapRecord(record, config, logoCache) {
   const fields = record.fields || {};
   const onWebsite = isApproved(fields[config.websiteEnabledField], config.websiteEnabledValues);
 
@@ -136,12 +142,13 @@ async function mapRecord(record, config) {
   const tier = toText(fields[config.tierField]) || "General";
   const website = normalizeUrl(toText(fields[config.urlField]));
   const description = toText(fields[config.descriptionField]);
-  const logoPath = await downloadLogo(fields[config.logoField], name);
+  const logoVersion = normalizeVersion(fields[config.logoModifiedField]) || record.id;
+  const logoPath = await downloadLogo(fields[config.logoField], name, record.id, logoVersion, logoCache);
 
   return { name, tier, website, description, logoPath };
 }
 
-async function downloadLogo(value, memberName) {
+async function downloadLogo(value, memberName, recordId, logoVersion, logoCache) {
   const attachment = Array.isArray(value) ? value[0] : null;
 
   if (!attachment || !attachment.url) {
@@ -154,6 +161,13 @@ async function downloadLogo(value, memberName) {
   const relativePath = path.posix.join("members-assets", fileName);
   const outputPath = path.join(rootDir, relativePath);
 
+  const cacheKey = String(recordId || memberName);
+  const cacheEntry = logoCache[cacheKey];
+
+  if (cacheEntry && cacheEntry.version === logoVersion && cacheEntry.relativePath === relativePath && fsSync.existsSync(outputPath)) {
+    return withVersion(relativePath, logoVersion);
+  }
+
   const response = await fetch(sourceUrl);
 
   if (!response.ok) {
@@ -162,8 +176,9 @@ async function downloadLogo(value, memberName) {
 
   const bytes = new Uint8Array(await response.arrayBuffer());
   await fs.writeFile(outputPath, bytes);
+  logoCache[cacheKey] = { version: logoVersion, relativePath, updatedAt: new Date().toISOString() };
 
-  return relativePath;
+  return withVersion(relativePath, logoVersion);
 }
 
 function normalizeMembers(members) {
@@ -221,6 +236,33 @@ function normalizeUrl(value) {
   if (/^https?:\/\//i.test(value)) return value;
   return `https://${value}`;
 }
+
+async function loadLogoCache() {
+  try {
+    const contents = await fs.readFile(logoCachePath, "utf8");
+    return JSON.parse(contents);
+  } catch (error) {
+    if (error && error.code === "ENOENT") {
+      return {};
+    }
+
+    throw error;
+  }
+}
+
+async function saveLogoCache(cache) {
+  await fs.writeFile(logoCachePath, JSON.stringify(cache, null, 2) + "\n", "utf8");
+}
+
+function normalizeVersion(value) {
+  const text = toText(value);
+  return text ? text.replace(/[^a-zA-Z0-9._:-]/g, "-") : "";
+}
+
+function withVersion(relativePath, version) {
+  return version ? `${relativePath}?v=${encodeURIComponent(version)}` : relativePath;
+}
+
 
 function isApproved(value, approvedValues) {
   if (value === undefined || value === null || value === "") {
