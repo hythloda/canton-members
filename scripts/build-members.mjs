@@ -142,14 +142,14 @@ async function mapRecord(record, config, logoCache) {
   const tier = toText(fields[config.tierField]) || "General";
   const website = normalizeUrl(toText(fields[config.urlField]));
   const description = toText(fields[config.descriptionField]);
-  const logoVersion = normalizeVersion(fields[config.logoModifiedField]) || record.id;
-  const logoPath = await downloadLogo(fields[config.logoField], name, record.id, logoVersion, logoCache);
+  const attachment = Array.isArray(fields[config.logoField]) ? fields[config.logoField][0] : null;
+  const logoVersion = buildLogoVersion(attachment, fields[config.logoModifiedField], record.id);
+  const logoPath = await downloadLogo(attachment, name, record.id, logoVersion, logoCache);
 
   return { name, tier, website, description, logoPath };
 }
 
-async function downloadLogo(value, memberName, recordId, logoVersion, logoCache) {
-  const attachment = Array.isArray(value) ? value[0] : null;
+async function downloadLogo(attachment, memberName, recordId, logoVersion, logoCache) {
 
   if (!attachment || !attachment.url) {
     return "";
@@ -257,6 +257,22 @@ async function saveLogoCache(cache) {
 function normalizeVersion(value) {
   const text = toText(value);
   return text ? text.replace(/[^a-zA-Z0-9._:-]/g, "-") : "";
+}
+
+function buildLogoVersion(attachment, modifiedValue, fallback) {
+  if (!attachment) {
+    return normalizeVersion(modifiedValue) || String(fallback || "");
+  }
+
+  const parts = [
+    attachment.id,
+    attachment.filename,
+    attachment.size,
+    attachment.type,
+    normalizeVersion(modifiedValue)
+  ].filter(Boolean);
+
+  return normalizeVersion(parts.join("-")) || String(fallback || "");
 }
 
 function withVersion(relativePath, version) {
