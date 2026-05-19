@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 160" preserveAspectRatio="xMidYMid meet">
+  <text x="0" y="130"
+        font-family="Helvetica Neue, Helvetica, Arial Black, sans-serif"
+        font-weight="900"
+        font-size="140"
+        letter-spacing="-4"
+        fill="#F39200">FP</text>
+  <text x="195" y="130"
+        font-family="Helvetica Neue, Helvetica, Arial Black, sans-serif"
+        font-weight="900"
+        font-size="140"
+        letter-spacing="-4"
+        fill="#FFFFFF">Block</text>
+</svg>

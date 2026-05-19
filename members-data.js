@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-05-18T13:37:15.149Z",
+  "updatedAt": "2026-05-19T15:12:16.746Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -227,7 +227,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://chata.ai/",
           "description": "1210, 530 - 8th Ave SW, Calgary, AB T2P 3S8",
-          "logoPath": "members-assets/chata-technologies-inc.png?v=att7ggzyIsHxjYPJ0-image.png-5641-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/chata-technologies-inc.png?v=attFfhG35GhzSqDS4-Chata-RGB-Blue---248px.png-11606-image-png-2026-05-19T15%3A05%3A32.000Z"
         },
         {
           "name": "Copper Markets (Switzerland) AG",
@@ -304,7 +304,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.fpblock.com",
           "description": "10130 Perimeter Parkway Suite 200 Charlotte, NC 28216-0197",
-          "logoPath": "members-assets/fp-complete-corporation.jpeg?v=attmTqRy3xZaU9HOB-original-9D7E3C29-BB02-49F2-BADC-200A3250E6D2.jpeg-16548-image-jpeg-2026-05-14T14%3A28%3A48.000Z"
+          "logoPath": "members-assets/fp-complete-corporation.svg?v=attWuKgOKJLxpBvWh-fp-block-logo.svg-523-image-svg-xml-2026-05-18T15%3A40%3A53.000Z"
         },
         {
           "name": "Galaxy Digital",
@@ -548,7 +548,7 @@ window.MEMBERS_DATA = {
           "tier": "Associate",
           "website": "https://isda.org",
           "description": "10 E. 53rd Street, 9th Floor, New York, NY 10022, United States",
-          "logoPath": "members-assets/international-swaps-and-derivatives-association.png?v=attUHrIzKUHsjvfTd-image.png-7616-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/international-swaps-and-derivatives-association.png?v=atty9MD2MGuWE7vAO-ISDA.png-12548-image-png-2026-05-18T23%3A06%3A30.000Z"
         }
       ]
     }
