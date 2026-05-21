@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-05-19T15:12:16.746Z",
+  "updatedAt": "2026-05-21T13:37:25.507Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -81,7 +81,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.goldmansachs.com/",
           "description": "30 Hudson Street, 32nd Floor, Jersey City, New Jersey 07302, United States",
-          "logoPath": "members-assets/goldman-sachs-co-llc.png?v=attiejYOIA45JAT2P-image.png-12614-image-png-2026-05-15T19%3A02%3A15.000Z"
+          "logoPath": "members-assets/goldman-sachs-co-llc.png?v=attO2XuKtYtXEQnBC-Goldman-Sachs-logo.png-9690-image-png-2026-05-21T13%3A34%3A53.000Z"
         },
         {
           "name": "HSBC",
@@ -349,6 +349,13 @@ window.MEMBERS_DATA = {
           "logoPath": "members-assets/kora-labs-corp.webp?v=att6YKklo8atHjxSn-kora-small-logo.webp-3376-image-webp-2026-05-13T18%3A30%3A51.000Z"
         },
         {
+          "name": "KRO Brokers, SPC",
+          "tier": "General",
+          "website": "https://www.kromarketplace.com/",
+          "description": "8318 28th Ave NW, Seattle, WA 98117",
+          "logoPath": ""
+        },
+        {
           "name": "Launchnodes",
           "tier": "General",
           "website": "https://www.launchnodes.com/",
@@ -548,7 +555,7 @@ window.MEMBERS_DATA = {
           "tier": "Associate",
           "website": "https://isda.org",
           "description": "10 E. 53rd Street, 9th Floor, New York, NY 10022, United States",
-          "logoPath": "members-assets/international-swaps-and-derivatives-association.png?v=atty9MD2MGuWE7vAO-ISDA.png-12548-image-png-2026-05-18T23%3A06%3A30.000Z"
+          "logoPath": "members-assets/international-swaps-and-derivatives-association.png?v=attHGumn2M7A4wVAi-ISDA-Logo-1.png-11790-image-png-2026-05-21T13%3A35%3A44.000Z"
         }
       ]
     }
