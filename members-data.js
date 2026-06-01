@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-05-25T14:44:40.340Z",
+  "updatedAt": "2026-06-01T17:28:11.364Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -25,7 +25,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://group.bnpparibas/en/",
           "description": "3 rue Antin, Paris, Île-de-France 75002, France",
-          "logoPath": "members-assets/bnp-paribas-sa.png?v=attoUHlZLeAiFS6vg-image.png-7144-image-png-2026-05-15T19%3A07%3A53.000Z"
+          "logoPath": "members-assets/bnp-paribas-sa.png?v=attoUHlZLeAiFS6vg-image.png-7144-image-png-2026-05-25T17%3A53%3A04.000Z"
         },
         {
           "name": "BNY",
@@ -130,7 +130,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.t-rize.io/",
           "description": "2500, 1155 Boul. Rene-Levesque, Montreal, Quebec H3B 3X7, Canada",
-          "logoPath": "members-assets/t-rize-group.png?v=attfJSxPNKrtId6K1-logo_trize.png-8686-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/t-rize-group.png?v=attfJSxPNKrtId6K1-logo_trize.png-8686-image-png-2026-05-25T19%3A27%3A35.000Z"
         },
         {
           "name": "Tradeweb Markets LLC",
@@ -164,7 +164,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://avrofi.com/",
           "description": "34 Shrewsbury Ave, Suite 1C, Red Bank, NJ 07701",
-          "logoPath": "members-assets/avro-digital-inc.svg?v=attNLlsQWSllx6wqM-avrofi-a-mark-white.svg-403-image-svg-xml-2026-05-15T12%3A21%3A35.000Z"
+          "logoPath": "members-assets/avro-digital-inc.svg?v=attNLlsQWSllx6wqM-avrofi-a-mark-white.svg-403-image-svg-xml-2026-05-27T19%3A16%3A51.000Z"
         },
         {
           "name": "BitSafe",
@@ -188,6 +188,13 @@ window.MEMBERS_DATA = {
           "logoPath": "members-assets/blockdaemon.png?v=attgEiZ48T7vNPbwC-logo_blockdaemon.png-2009-image-png-2026-05-13T18%3A30%3A51.000Z"
         },
         {
+          "name": "BPX Markets Limited",
+          "tier": "General",
+          "website": "https://bpx.exchange/",
+          "description": "83 Baker St, London, W1U 6AG",
+          "logoPath": "members-assets/bpx-markets-limited.png?v=attooEA05xXM8M8iR-BPX-VERSION-1_1.png-14462-image-png-2026-05-28T12%3A12%3A49.000Z"
+        },
+        {
           "name": "Calastone Limited",
           "tier": "General",
           "website": "https://www.calastone.com/",
@@ -206,7 +213,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.cashen.cc/",
           "description": "540 W Madison St. suite 2500. Chicago, IL 60661",
-          "logoPath": "members-assets/cashen-labs-inc.svg?v=attv9B03IRvi9gDTb-Cashen-logo-CF.svg-3558-image-svg-xml-2026-05-15T12%3A27%3A36.000Z"
+          "logoPath": "members-assets/cashen-labs-inc.svg?v=attv9B03IRvi9gDTb-Cashen-logo-CF.svg-3558-image-svg-xml-2026-05-25T17%3A51%3A24.000Z"
         },
         {
           "name": "CaviarNine Limited",
@@ -220,7 +227,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://chainlinklabs.com/",
           "description": "1250 Broadway 36th Floor, New York, New York 10001, United States",
-          "logoPath": "members-assets/chainlink-labs.png?v=attkqqYlUHnA8dclm-logo_chainlinklabs.png-7673-image-png-2026-05-15T19%3A00%3A55.000Z"
+          "logoPath": "members-assets/chainlink-labs.png?v=attkqqYlUHnA8dclm-logo_chainlinklabs.png-7673-image-png-2026-05-25T18%3A55%3A34.000Z"
         },
         {
           "name": "Chata Technologies Inc",
@@ -262,7 +269,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://ivan@enzyme.finance",
           "description": "South Ocean Blvd, Suite 706 Albany, Nassau, New Providence, Bahamas",
-          "logoPath": "members-assets/enzyme-foundation.png?v=attsXVh7lTqkPEz5g-Logo-canton-1.png-2124-image-png-2026-05-18T12%3A21%3A11.000Z"
+          "logoPath": "members-assets/enzyme-foundation.png?v=attsXVh7lTqkPEz5g-Logo-canton-1.png-2124-image-png-2026-05-27T19%3A17%3A02.000Z"
         },
         {
           "name": "EquiLend",
@@ -276,7 +283,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://excellar.finance",
           "description": "6 Kilmer Rd, 1178, Edison, NJ 08817",
-          "logoPath": "members-assets/excellar-inc.png?v=att3GJINiQNEq0ORZ-Excellar-.png-8326-image-png-2026-05-21T15%3A45%3A07.000Z"
+          "logoPath": "members-assets/excellar-inc.png?v=att3GJINiQNEq0ORZ-Excellar-.png-8326-image-png-2026-05-25T17%3A51%3A26.000Z"
         },
         {
           "name": "Fairmint Inc",
@@ -395,7 +402,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://modulo.finance",
           "description": "5705 Tura Ln, Unit 1, Austin, TX 78721",
-          "logoPath": "members-assets/modulo-labs-inc.png?v=attGquYRLzshY9UUK-image.png-121207-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/modulo-labs-inc.png?v=attngsD4Q4zabAGk8-image.png-24608-image-png-2026-05-27T19%3A16%3A32.000Z"
         },
         {
           "name": "Moody's",
@@ -423,7 +430,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://onrails.finance/",
           "description": "Trinity Chambers, 4301, Road Town, Tortola, BVI, VG1110",
-          "logoPath": "members-assets/onrails-ltd.png?v=attQMXkquOToihxOl-onrails-logo-white.png-2321-image-png-2026-05-14T15%3A25%3A28.000Z"
+          "logoPath": "members-assets/onrails-ltd.png?v=attQMXkquOToihxOl-onrails-logo-white.png-2321-image-png-2026-05-25T17%3A51%3A09.000Z"
         },
         {
           "name": "Ownera",
@@ -437,14 +444,14 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.blockbooster.io",
           "description": "Vistra Corporate Services Centre, Wickhams Cay II, Road Town, Tortola, VG1110, British Virgin Islands",
-          "logoPath": "members-assets/pioneering-booster-limited.svg?v=attzRswxvLQahsIiR-BlockBooster---horizontal---white---248-127.svg-7975-image-svg-xml-2026-05-21T15%3A45%3A16.000Z"
+          "logoPath": "members-assets/pioneering-booster-limited.svg?v=attzRswxvLQahsIiR-BlockBooster---horizontal---white---248-127.svg-7975-image-svg-xml-2026-05-25T17%3A51%3A20.000Z"
         },
         {
           "name": "PixelPlex",
           "tier": "General",
           "website": "https://pixelplex.io/",
           "description": "Kemp House, 152–160 City Road, London EC1V 2NX, United Kingdom",
-          "logoPath": "members-assets/pixelplex.png?v=att8v6Pu4ZyXPnwUg-image.png-113998-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/pixelplex.png?v=attXDRqX4aEzWkkOT-image.png-8435-image-png-2026-05-27T19%3A16%3A09.000Z"
         },
         {
           "name": "Proof Group",
@@ -496,6 +503,13 @@ window.MEMBERS_DATA = {
           "logoPath": "members-assets/the-tie-inc.png?v=att0LRW0JxyuNFvBp-logo_thetie.png-1313-image-png-2026-05-13T18%3A30%3A51.000Z"
         },
         {
+          "name": "Tokenovate Ltd",
+          "tier": "General",
+          "website": "https://www.tokenovate.com/",
+          "description": "Tokenovate\r\n184 Cambridge Science Park Rd, \r\nMilton Rd, Milton, \r\nCambridge CB4 0GA\r\nUnited Kingdom",
+          "logoPath": "members-assets/tokenovate-ltd.png?v=att3J2PGVV8dIf5kT-Tokenovate_NewLogo_White.png-30871-image-png-2026-06-01T10%3A44%3A21.000Z"
+        },
+        {
           "name": "TRM Labs",
           "tier": "General",
           "website": "https://www.trmlabs.com/",
@@ -507,7 +521,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.ubyx.xyz/",
           "description": "221 9th St PMB 1011, Wilmington, Delaware 19801, United States",
-          "logoPath": "members-assets/ubyx-inc.webp?v=attWiddsNOkwqvO3q-ubyx.webp-8748-image-webp-2026-05-15T19%3A04%3A07.000Z"
+          "logoPath": "members-assets/ubyx-inc.webp?v=attWiddsNOkwqvO3q-ubyx.webp-8748-image-webp-2026-05-25T17%3A50%3A42.000Z"
         },
         {
           "name": "USIG Digital, Inc.",
@@ -534,7 +548,7 @@ window.MEMBERS_DATA = {
           "tier": "Associate",
           "website": "https://www.decinstitute.org/",
           "description": "DEC Institute\nSuurstoffi 1\n6343 Risch-Rotkreiz\nSwitzerland",
-          "logoPath": "members-assets/dec-institute.png?v=attKHNTk5f44LGuFO-image.png-2380-image-png-2026-05-21T15%3A45%3A40.000Z"
+          "logoPath": "members-assets/dec-institute.png?v=attKHNTk5f44LGuFO-image.png-2380-image-png-2026-05-26T12%3A41%3A46.000Z"
         },
         {
           "name": "Global Blockchain Business Council",
