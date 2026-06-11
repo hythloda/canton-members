@@ -154,6 +154,44 @@
       margin-top: 12px;
     }
 
+    .missing-section {
+      margin-top: 34px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(167, 142, 255, 0.18);
+    }
+
+    .missing-section h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+    }
+
+    .missing-section p {
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    .missing-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .missing-list li {
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(167, 142, 255, 0.22);
+      background: rgba(22, 13, 47, 0.6);
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
     .page-footer {
       margin-top: 38px;
       padding-top: 22px;
@@ -266,6 +304,8 @@
 
       function renderCards() {
         const tier = tiers.find((entry) => entry.slug === activeTier) || tiers[0];
+        const membersWithLogos = tier.members.filter((member) => member.logoPath);
+        const membersWithoutLogos = tier.members.filter((member) => !member.logoPath);
 
         if (!tier.members.length) {
           contentRoot.innerHTML =
@@ -273,10 +313,8 @@
           return;
         }
 
-        const cards = tier.members.map((member) => {
-          const content = member.logoPath
-            ? '<img src="' + escapeAttr(member.logoPath) + '" alt="' + escapeAttr(member.name + ' logo') + '" loading="lazy">'
-            : '<div class="logo-fallback">' + escapeHtml(member.name) + '</div>';
+        const cards = membersWithLogos.map((member) => {
+          const content = '<img src="' + escapeAttr(member.logoPath) + '" alt="' + escapeAttr(member.name + ' logo') + '" loading="lazy">';
 
           const href = member.website ? ' href="' + escapeAttr(member.website) + '" target="_blank" rel="noopener"' : "";
           const tagNameOpen = member.website ? '<a class="card-link"' + href + '>' : '<div class="card-link">';
@@ -291,7 +329,21 @@
           );
         }).join("");
 
-        contentRoot.innerHTML = '<div class="members-grid">' + cards + '</div>';
+        const gridMarkup = cards
+          ? '<div class="members-grid">' + cards + '</div>'
+          : '<div class="empty-state"><p>No approved logos are currently available in this tier.</p></div>';
+
+        const missingMarkup = membersWithoutLogos.length
+          ? '<section class="missing-section">' +
+              '<h2>Members without logos</h2>' +
+              '<p>These members are included in this tier but do not currently have a logo on file.</p>' +
+              '<ul class="missing-list">' +
+                membersWithoutLogos.map((member) => '<li>' + escapeHtml(member.name) + '</li>').join('') +
+              '</ul>' +
+            '</section>'
+          : '';
+
+        contentRoot.innerHTML = gridMarkup + missingMarkup;
       }
 
       renderTabs();
