@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-06-11T11:40:52.305Z",
+  "updatedAt": "2026-06-15T17:07:48.691Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -25,7 +25,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://group.bnpparibas/en/",
           "description": "3 rue Antin, Paris, Île-de-France 75002, France",
-          "logoPath": "members-assets/bnp-paribas-sa.png?v=attoUHlZLeAiFS6vg-image.png-7144-image-png-2026-05-25T17%3A53%3A04.000Z"
+          "logoPath": "members-assets/bnp-paribas-sa.png?v=attoUHlZLeAiFS6vg-image.png-7144-image-png-2026-06-12T17%3A40%3A24.000Z"
         },
         {
           "name": "BNY",
@@ -472,7 +472,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.redstone.finance/",
           "description": "Mühlegasse 18, Baar, Zug 6340, Switzerland",
-          "logoPath": "members-assets/redstone.png?v=attZd3lEumtb7VSrE-logo_redstone.png-2656-image-png-2026-06-09T12%3A48%3A57.000Z"
+          "logoPath": "members-assets/redstone.png?v=attZd3lEumtb7VSrE-logo_redstone.png-2656-image-png-2026-06-11T11%3A55%3A18.000Z"
         },
         {
           "name": "Sats Labs Inc.",
