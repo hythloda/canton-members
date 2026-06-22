@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-06-15T17:07:48.691Z",
+  "updatedAt": "2026-06-22T16:45:28.034Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -81,7 +81,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.goldmansachs.com/",
           "description": "30 Hudson Street, 32nd Floor, Jersey City, New Jersey 07302, United States",
-          "logoPath": "members-assets/goldman-sachs-co-llc.png?v=attO2XuKtYtXEQnBC-Goldman-Sachs-logo.png-9690-image-png-2026-05-21T13%3A34%3A53.000Z"
+          "logoPath": "members-assets/goldman-sachs-co-llc.png?v=attO2XuKtYtXEQnBC-Goldman-Sachs-logo.png-9690-image-png-2026-06-19T16%3A36%3A32.000Z"
         },
         {
           "name": "HSBC",
@@ -150,7 +150,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.4mgroup.io/",
           "description": "540 Covington Pl, Wyckoff, NJ 07481, United States",
-          "logoPath": "members-assets/4m-group-llc.png?v=att1bimJHv07fFOFM-logo_4mgroup.png-12950-image-png-2026-06-09T12%3A47%3A52.000Z"
+          "logoPath": "members-assets/4m-group-llc.png?v=att1bimJHv07fFOFM-logo_4mgroup.png-12950-image-png-2026-06-18T13%3A44%3A49.000Z"
         },
         {
           "name": "AngelHack Pte Ltd",
@@ -171,7 +171,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.bitsafe.finance/",
           "description": "24 Dartmouth St, North Andover, Massachusetts 01845, United States",
-          "logoPath": "members-assets/bitsafe.png?v=attGa6mf5Q7YEZnZE-logo_bitsafe.png-1951-image-png-2026-06-09T12%3A48%3A51.000Z"
+          "logoPath": "members-assets/bitsafe.png?v=attGa6mf5Q7YEZnZE-logo_bitsafe.png-1951-image-png-2026-06-15T19%3A31%3A44.000Z"
         },
         {
           "name": "Bitwave",
@@ -248,7 +248,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "HTTPS://cosimo.fund",
           "description": "1146 W Kinzie St, Chicago, IL 60642",
-          "logoPath": "members-assets/cosimo-capital-llc.png?v=attbdc8Zcqlze3Tbb-9d853ae4-a4f3-4ed0-9c9b-99426e053bb7.png-786583-image-png-2026-05-15T20%3A13%3A40.000Z"
+          "logoPath": "members-assets/cosimo-capital-llc.png?v=attbdc8Zcqlze3Tbb-9d853ae4-a4f3-4ed0-9c9b-99426e053bb7.png-786583-image-png-2026-06-19T16%3A29%3A25.000Z"
         },
         {
           "name": "Cryptio LTD",
@@ -569,14 +569,14 @@ window.MEMBERS_DATA = {
           "tier": "Associate",
           "website": "https://www.gbbc.io/",
           "description": "Rue de Lyon 42b, Geneva, Genève 1205, Switzerland",
-          "logoPath": "members-assets/global-blockchain-business-council.png?v=att6RynCHzrm7bxdd-logo_gbbc.png-19765-image-png-2026-05-15T19%3A02%3A07.000Z"
+          "logoPath": "members-assets/global-blockchain-business-council.png?v=att6RynCHzrm7bxdd-logo_gbbc.png-19765-image-png-2026-06-18T14%3A54%3A27.000Z"
         },
         {
           "name": "Hong Kong Monetary Authority",
           "tier": "Associate",
           "website": "https://www.hkma.gov.hk/eng/",
           "description": "55/F Two International Finance Centre, 8 Finance Street, Central, Hong Kong",
-          "logoPath": "members-assets/hong-kong-monetary-authority.png?v=attdmYLwvZUi2Uaok-Untitled-design-16.png-8649-image-png-2026-05-15T19%3A02%3A38.000Z"
+          "logoPath": "members-assets/hong-kong-monetary-authority.png?v=attdmYLwvZUi2Uaok-Untitled-design-16.png-8649-image-png-2026-06-18T14%3A31%3A07.000Z"
         },
         {
           "name": "International Swaps and Derivatives Association",
