@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-06-22T16:45:28.034Z",
+  "updatedAt": "2026-06-29T15:37:39.287Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -137,7 +137,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.tradeweb.com/",
           "description": "1177 Avenue of the Americas, New York, New York 10036, United States",
-          "logoPath": "members-assets/tradeweb-markets-llc.png?v=attMtKdv3S0dCOhRU-logo_tradeweb.png-7382-image-png-2026-06-09T12%3A48%3A01.000Z"
+          "logoPath": "members-assets/tradeweb-markets-llc.png?v=attMtKdv3S0dCOhRU-logo_tradeweb.png-7382-image-png-2026-06-24T17%3A55%3A12.000Z"
         }
       ]
     },
@@ -199,7 +199,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.calastone.com/",
           "description": "Birchin Court, 20 Birchin Lane, London, City of London EC3V 9DU, United Kingdom",
-          "logoPath": "members-assets/calastone-limited.svg?v=attAXaMLoCwTSSg7r-calistone.svg-9237-image-svg-xml-2026-05-15T19%3A00%3A04.000Z"
+          "logoPath": "members-assets/calastone-limited.svg?v=attAXaMLoCwTSSg7r-calistone.svg-9237-image-svg-xml-2026-06-23T11%3A08%3A30.000Z"
         },
         {
           "name": "Cantor8 Technologies",
@@ -297,7 +297,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.figment.io/",
           "description": "King St. West, Toronto, Ontario M5V1M1, Canada",
-          "logoPath": "members-assets/figment-inc.png?v=attzG7HVaQfpyP7Wr-logo_figment.png-1712-image-png-2026-06-08T14%3A30%3A56.000Z"
+          "logoPath": "members-assets/figment-inc.png?v=attzG7HVaQfpyP7Wr-logo_figment.png-1712-image-png-2026-06-26T17%3A07%3A06.000Z"
         },
         {
           "name": "Finoa Consensus Services GmbH",
@@ -339,7 +339,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.kaiko.com/",
           "description": "500 7th Ave, Suite 08B104, New York, New York 10018, United States",
-          "logoPath": "members-assets/kaiko.png?v=attg4jTHQsyT58b46-logo_kaiko.png-3810-image-png-2026-06-09T12%3A48%3A43.000Z"
+          "logoPath": "members-assets/kaiko.png?v=attg4jTHQsyT58b46-logo_kaiko.png-3810-image-png-2026-06-29T13%3A40%3A50.000Z"
         },
         {
           "name": "Kaleido",
