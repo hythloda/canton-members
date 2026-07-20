@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-07-13T14:21:31.817Z",
+  "updatedAt": "2026-07-20T13:55:02.276Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -60,7 +60,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.dtcc.com/",
           "description": "18301 Bermuda Green Dr, Tampa, Florida 33647, United States",
-          "logoPath": "members-assets/depository-trust-and-clearing-corporation-dtcc.png?v=attaQunRoBkpTsXed-logo_dtcc.png-2455-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/depository-trust-and-clearing-corporation-dtcc.png?v=attaQunRoBkpTsXed-logo_dtcc.png-2455-image-png-2026-07-14T16%3A34%3A11.000Z"
         },
         {
           "name": "Digital Asset (Switzerland) GmbH",
@@ -109,7 +109,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.liquiditytech.com/en",
           "description": "#09-01, 9 Battery Rd, Singapore, Central Singapore 049910, Singapore",
-          "logoPath": "members-assets/liquiditytech-limited.png?v=attcDbHn47QXjuCZ3-logo_ltp.png-4506-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/liquiditytech-limited.png?v=attcDbHn47QXjuCZ3-logo_ltp.png-4506-image-png-2026-07-16T13%3A37%3A26.000Z"
         },
         {
           "name": "Obsidian Systems",
@@ -123,7 +123,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.sbigroup.co.jp/english/company/group/sbidah",
           "description": "Izumi Garden Tower 1-6-1 Roppongi, Minato-ku, Tokyo 106-6019, Japan",
-          "logoPath": "members-assets/sbi-digital-asset-holdings.webp?v=attUEQBqTQ6xChiwS-logo_sbi.webp-3954-image-webp-2026-07-01T14%3A48%3A35.000Z"
+          "logoPath": "members-assets/sbi-digital-asset-holdings.webp?v=attUEQBqTQ6xChiwS-logo_sbi.webp-3954-image-webp-2026-07-16T14%3A16%3A33.000Z"
         },
         {
           "name": "T-RIZE Group",
@@ -145,6 +145,13 @@ window.MEMBERS_DATA = {
       "slug": "general",
       "label": "General",
       "members": [
+        {
+          "name": "21M Labs Inc.",
+          "tier": "General",
+          "website": "https://trade.fast",
+          "description": "Advanced Tower Building, First floor, Ricardo Arias Street, Panama City, Republic of Panama",
+          "logoPath": "members-assets/21m-labs-inc.svg?v=attBmG9NbLqEiJcRO-Logo_Dark.svg-5005-image-svg-xml-2026-07-16T14%3A28%3A34.000Z"
+        },
         {
           "name": "4M Group LLC",
           "tier": "General",
@@ -185,7 +192,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.blockdaemon.com/",
           "description": "11400 W Olympic Blvd., Suite 200, PMB 215, Los Angeles, California 90064, United States",
-          "logoPath": "members-assets/blockdaemon.png?v=attgEiZ48T7vNPbwC-logo_blockdaemon.png-2009-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/blockdaemon.png?v=attgEiZ48T7vNPbwC-logo_blockdaemon.png-2009-image-png-2026-07-16T14%3A09%3A00.000Z"
         },
         {
           "name": "BPX Markets Limited",
@@ -206,7 +213,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://cantor8.io/",
           "description": "14 Tregubter Rd, London, City of London SW10 9LR, United Kingdom",
-          "logoPath": "members-assets/cantor8-technologies.png?v=atttn4Ovqvz5Dnl8j-logo_cantor8.png-2339-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/cantor8-technologies.png?v=atttn4Ovqvz5Dnl8j-logo_cantor8.png-2339-image-png-2026-07-16T13%3A45%3A34.000Z"
         },
         {
           "name": "Cashen Labs,  Inc.",
@@ -342,6 +349,13 @@ window.MEMBERS_DATA = {
           "logoPath": ""
         },
         {
+          "name": "Halborn Inc.",
+          "tier": "General",
+          "website": "https://Halborn.com",
+          "description": "13727 SW 152nd Street, 1303, Miami, FL, 33177, US",
+          "logoPath": ""
+        },
+        {
           "name": "Hecto Finance Limited",
           "tier": "General",
           "website": "https://www.hecto.inc",
@@ -388,14 +402,14 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.launchnodes.com/",
           "description": "71-75 Shelton Street, London, City of London WC2H 9JQ, United Kingdom",
-          "logoPath": "members-assets/launchnodes.png?v=attHBGCB6UVCbdJHy-logo_launchnodes_new.png-3299-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/launchnodes.png?v=attHBGCB6UVCbdJHy-logo_launchnodes_new.png-3299-image-png-2026-07-16T13%3A21%3A43.000Z"
         },
         {
           "name": "LayerZero Labs Ltd.",
           "tier": "General",
           "website": "https://layerzero.network/",
           "description": "Trinity Chambers P.O. Box 4301, Road Town, Tortola VG1110, British Virgin Islands",
-          "logoPath": "members-assets/layerzero-labs-ltd.png?v=attLoJa8ePVsAjcmu-logo_zero.png-2766-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/layerzero-labs-ltd.png?v=attLoJa8ePVsAjcmu-logo_zero.png-2766-image-png-2026-07-16T13%3A29%3A29.000Z"
         },
         {
           "name": "LendOS",
@@ -458,7 +472,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.ownera.io/",
           "description": "16 Great Queen Street, London, City of London WC2B 5AH, United Kingdom",
-          "logoPath": "members-assets/ownera.png?v=attW5W45T6y6jvin6-logo_ownera.png-7913-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/ownera.png?v=attW5W45T6y6jvin6-logo_ownera.png-7913-image-png-2026-07-16T13%3A56%3A21.000Z"
         },
         {
           "name": "Pioneering Booster Limited",
