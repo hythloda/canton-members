@@ -314,7 +314,7 @@
         }
 
         const cards = membersWithLogos.map((member) => {
-          const content = '<img src="' + escapeAttr(member.logoPath) + '" alt="' + escapeAttr(member.name + ' logo') + '" loading="lazy">';
+          const content = '<img src="' + escapeAttr(member.logoPath) + '" alt="' + escapeAttr(member.name + ' logo') + '" loading="lazy" data-member-name="' + escapeAttr(member.name) + '">';
 
           const href = member.website ? ' href="' + escapeAttr(member.website) + '" target="_blank" rel="noopener"' : "";
           const tagNameOpen = member.website ? '<a class="card-link"' + href + '>' : '<div class="card-link">';
@@ -344,6 +344,15 @@
           : '';
 
         contentRoot.innerHTML = gridMarkup + missingMarkup;
+
+        contentRoot.querySelectorAll('img[data-member-name]').forEach((image) => {
+          image.addEventListener('error', function handleImageError() {
+            const fallback = document.createElement('div');
+            fallback.className = 'logo-fallback';
+            fallback.textContent = image.getAttribute('data-member-name') || 'Member';
+            image.replaceWith(fallback);
+          }, { once: true });
+        });
       }
 
       renderTabs();

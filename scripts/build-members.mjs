@@ -155,6 +155,10 @@ async function downloadLogo(attachment, memberName, recordId, logoVersion, logoC
     return "";
   }
 
+  if (!isRenderableLogoAsset(attachment)) {
+    return "";
+  }
+
   const sourceUrl = attachment.url;
   const extension = guessExtension(attachment.filename || "", attachment.type || "", sourceUrl);
   const fileName = `${slugify(memberName)}${extension}`;
@@ -179,6 +183,27 @@ async function downloadLogo(attachment, memberName, recordId, logoVersion, logoC
   logoCache[cacheKey] = { version: logoVersion, relativePath, updatedAt: new Date().toISOString() };
 
   return withVersion(relativePath, logoVersion);
+}
+
+
+function isRenderableLogoAsset(attachment) {
+  if (!attachment) return false;
+
+  const supportedMimeTypes = new Set([
+    'image/png',
+    'image/jpeg',
+    'image/svg+xml',
+    'image/webp',
+    'image/gif',
+    'image/avif'
+  ]);
+
+  if (supportedMimeTypes.has(attachment.type)) {
+    return true;
+  }
+
+  const extension = guessExtension(attachment.filename || '', attachment.type || '', attachment.url || '');
+  return ['.png', '.jpg', '.jpeg', '.svg', '.webp', '.gif', '.avif'].includes(extension);
 }
 
 function normalizeMembers(members) {
