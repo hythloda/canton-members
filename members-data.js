@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-07-24T17:22:01.543Z",
+  "updatedAt": "2026-07-24T17:29:28.098Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -199,7 +199,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://bpx.exchange/",
           "description": "83 Baker St, London, W1U 6AG",
-          "logoPath": "members-assets/bpx-markets-limited.ai?v=attBAQPwzh5mji3Qy-BPX-negative-logo.ai-175566-application-postscript-2026-07-24T17%3A12%3A41.000Z"
+          "logoPath": ""
         },
         {
           "name": "Calastone Limited",
