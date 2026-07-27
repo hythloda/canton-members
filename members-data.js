@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-07-24T17:29:28.098Z",
+  "updatedAt": "2026-07-27T14:19:59.689Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -123,7 +123,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.sbigroup.co.jp/english/company/group/sbidah",
           "description": "Izumi Garden Tower 1-6-1 Roppongi, Minato-ku, Tokyo 106-6019, Japan",
-          "logoPath": "members-assets/sbi-digital-asset-holdings.webp?v=attUEQBqTQ6xChiwS-logo_sbi.webp-3954-image-webp-2026-07-22T14%3A49%3A29.000Z"
+          "logoPath": "members-assets/sbi-digital-asset-holdings.webp?v=attUEQBqTQ6xChiwS-logo_sbi.webp-3954-image-webp-2026-07-27T13%3A39%3A17.000Z"
         },
         {
           "name": "T-RIZE Group",
@@ -402,7 +402,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.launchnodes.com/",
           "description": "71-75 Shelton Street, London, City of London WC2H 9JQ, United Kingdom",
-          "logoPath": "members-assets/launchnodes.png?v=attHBGCB6UVCbdJHy-logo_launchnodes_new.png-3299-image-png-2026-07-16T13%3A21%3A43.000Z"
+          "logoPath": "members-assets/launchnodes.png?v=attHBGCB6UVCbdJHy-logo_launchnodes_new.png-3299-image-png-2026-07-24T20%3A24%3A42.000Z"
         },
         {
           "name": "LayerZero Labs Ltd.",
@@ -559,6 +559,13 @@ window.MEMBERS_DATA = {
           "logoPath": "members-assets/tokenovate-ltd.png?v=att3J2PGVV8dIf5kT-Tokenovate_NewLogo_White.png-30871-image-png-2026-07-22T14%3A49%3A54.000Z"
         },
         {
+          "name": "Transcend Street Solutions Inc.",
+          "tier": "General",
+          "website": "https://www.linkedin.com/company/3106214",
+          "description": "371 Hoes Lane\r\nSuite 205\r\nPiscataway, NJ\r\n08854",
+          "logoPath": ""
+        },
+        {
           "name": "TRM Labs",
           "tier": "General",
           "website": "https://www.trmlabs.com/",
@@ -584,7 +591,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.visa.com/en-us",
           "description": "300 Toni Stone Xing, San Francisco, CA 94158",
-          "logoPath": "members-assets/visa-inc.svg?v=attDxCzOvlMtbsWxi-Visa_White.svg-18460-image-svg-xml-2026-07-24T17%3A17%3A10.000Z"
+          "logoPath": "members-assets/visa-inc.svg?v=attDxCzOvlMtbsWxi-Visa_White.svg-18460-image-svg-xml-2026-07-27T14%3A04%3A38.000Z"
         },
         {
           "name": "Zeppelin Group Ltd",
