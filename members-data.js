@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-07-27T14:19:59.689Z",
+  "updatedAt": "2026-08-03T14:26:55.757Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -11,14 +11,14 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.fivenorthdigital.com/",
           "description": "142 West 57th Street 11th Floor, New York, New York 10019, United States",
-          "logoPath": "members-assets/5-north.png?v=attXXC6RGXCPE9Ufn-logo_5north-1.png-2162-image-png-2026-07-01T14%3A44%3A05.000Z"
+          "logoPath": "members-assets/5-north.png?v=attXXC6RGXCPE9Ufn-logo_5north-1.png-2162-image-png-2026-07-30T19%3A57%3A29.000Z"
         },
         {
           "name": "7RIDGE",
           "tier": "Premier",
           "website": "https://7ridge.com/",
           "description": "12 Arlington Road, London, Westminster W1G 0QB, United Kingdom",
-          "logoPath": "members-assets/7ridge.png?v=attOg207dwPYPLjKJ-logo_7ridge.png-817-image-png-2026-07-22T14%3A38%3A59.000Z"
+          "logoPath": "members-assets/7ridge.png?v=attOg207dwPYPLjKJ-logo_7ridge.png-817-image-png-2026-07-27T20%3A35%3A10.000Z"
         },
         {
           "name": "BNP Paribas S.A.",
@@ -39,7 +39,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.broadridge.com/",
           "description": "5 Dakota Drive, Lake Success, New York 11042, United States",
-          "logoPath": "members-assets/broadridge-financial-solutions.png?v=att2EzBiM710jqMru-logo_broadridge-1.png-2761-image-png-2026-07-01T14%3A44%3A11.000Z"
+          "logoPath": "members-assets/broadridge-financial-solutions.png?v=att2EzBiM710jqMru-logo_broadridge-1.png-2761-image-png-2026-08-03T13%3A57%3A34.000Z"
         },
         {
           "name": "Canton Strategic Holdings",
@@ -88,7 +88,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.us.hsbc.com/",
           "description": "8 Canada Square, London, City of London E14 5HQ, United Kingdom",
-          "logoPath": "members-assets/hsbc.png?v=attyHBWvMTMw0W8kg-logo_hsbc.png-2137-image-png-2026-07-01T14%3A44%3A13.000Z"
+          "logoPath": "members-assets/hsbc.png?v=attyHBWvMTMw0W8kg-logo_hsbc.png-2137-image-png-2026-08-03T13%3A57%3A32.000Z"
         },
         {
           "name": "IntellectEU",
@@ -150,7 +150,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://trade.fast",
           "description": "Advanced Tower Building, First floor, Ricardo Arias Street, Panama City, Republic of Panama",
-          "logoPath": "members-assets/21m-labs-inc.svg?v=attBmG9NbLqEiJcRO-Logo_Dark.svg-5005-image-svg-xml-2026-07-22T14%3A48%3A26.000Z"
+          "logoPath": "members-assets/21m-labs-inc.svg?v=attBmG9NbLqEiJcRO-Logo_Dark.svg-5005-image-svg-xml-2026-07-30T19%3A50%3A11.000Z"
         },
         {
           "name": "4M Group LLC",
@@ -220,7 +220,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.cashen.cc/",
           "description": "540 W Madison St. suite 2500. Chicago, IL 60661",
-          "logoPath": "members-assets/cashen-labs-inc.svg?v=attv9B03IRvi9gDTb-Cashen-logo-CF.svg-3558-image-svg-xml-2026-05-25T17%3A51%3A24.000Z"
+          "logoPath": "members-assets/cashen-labs-inc.svg?v=attv9B03IRvi9gDTb-Cashen-logo-CF.svg-3558-image-svg-xml-2026-07-30T19%3A47%3A01.000Z"
         },
         {
           "name": "CaviarNine Limited",
@@ -241,7 +241,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://chata.ai/",
           "description": "1210, 530 - 8th Ave SW, Calgary, AB T2P 3S8",
-          "logoPath": "members-assets/chata-technologies-inc.png?v=attFfhG35GhzSqDS4-Chata-RGB-Blue---248px.png-11606-image-png-2026-07-24T17%3A12%3A12.000Z"
+          "logoPath": "members-assets/chata-technologies-inc.png?v=attFfhG35GhzSqDS4-Chata-RGB-Blue---248px.png-11606-image-png-2026-07-27T20%3A35%3A10.000Z"
         },
         {
           "name": "Copper Markets (Switzerland) AG",
@@ -276,7 +276,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.edgeandnode.com/",
           "description": "548 Market Street\r\nPMB 91267\r\nSan Francisco CA 94104",
-          "logoPath": "members-assets/edge-node-ventures-inc.svg?v=att7sbf75F8Lnrjk5-EN-Wordmark-White-2x.svg-13732-image-svg-xml-2026-07-24T17%3A09%3A22.000Z"
+          "logoPath": "members-assets/edge-node-ventures-inc.svg?v=att7sbf75F8Lnrjk5-EN-Wordmark-White-2x.svg-13732-image-svg-xml-2026-07-30T19%3A50%3A07.000Z"
         },
         {
           "name": "Enzyme Foundation",
@@ -304,7 +304,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.fairmint.com/",
           "description": "8 The Green Ste300, Dover, Delaware 19901, United States",
-          "logoPath": "members-assets/fairmint-inc.png?v=attURmv4ldSbMq4ZF-logo_fairmint.png-5887-image-png-2026-07-22T14%3A47%3A16.000Z"
+          "logoPath": "members-assets/fairmint-inc.png?v=attURmv4ldSbMq4ZF-logo_fairmint.png-5887-image-png-2026-07-27T20%3A35%3A10.000Z"
         },
         {
           "name": "Figment Inc",
@@ -332,7 +332,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.galaxy.com",
           "description": "Galaxy Digital, ATTN: Richard Friedman, 300 Vesey St, 13th floor, New York NY 10282",
-          "logoPath": "members-assets/galaxy-digital.svg?v=attm1hrm4gbJK0hsN-Galaxy_Lockup_Horizontal_White.svg-2858-image-svg-xml-2026-07-24T17%3A12%3A15.000Z"
+          "logoPath": "members-assets/galaxy-digital.svg?v=attm1hrm4gbJK0hsN-Galaxy_Lockup_Horizontal_White.svg-2858-image-svg-xml-2026-07-30T19%3A49%3A59.000Z"
         },
         {
           "name": "Gevulot Oy",
@@ -353,14 +353,14 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://Halborn.com",
           "description": "13727 SW 152nd Street, 1303, Miami, FL, 33177, US",
-          "logoPath": "members-assets/halborn-inc.svg?v=attKfteC0kfhGdjgH-halborn_black_logo.svg-1659-image-svg-xml-2026-07-24T17%3A09%3A47.000Z"
+          "logoPath": "members-assets/halborn-inc.svg?v=attKfteC0kfhGdjgH-halborn_black_logo.svg-1659-image-svg-xml-2026-07-30T19%3A50%3A09.000Z"
         },
         {
           "name": "Hecto Finance Limited",
           "tier": "General",
           "website": "https://www.hecto.inc",
           "description": "3rd Floor Ritter House, Wickhams Cay II, Road Town, Tortola, VG1110, British Virgin Islands",
-          "logoPath": "members-assets/hecto-finance-limited.svg?v=attQCKnzQ2BomBsqj-Hetco-Logo.svg-17950-image-svg-xml-2026-07-24T17%3A10%3A09.000Z"
+          "logoPath": "members-assets/hecto-finance-limited.svg?v=attQCKnzQ2BomBsqj-Hetco-Logo.svg-17950-image-svg-xml-2026-07-30T19%3A50%3A04.000Z"
         },
         {
           "name": "Kaiko",
@@ -423,7 +423,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.lithiumdigital.com/",
           "description": "20 Swan Street, First Floor, Swan Buildings, Manchester, England M4 5JW, United Kingdom",
-          "logoPath": "members-assets/lithium-digital-limited.png?v=attq88XF4s6ZSVYVS-lithium-digital.png-2208-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/lithium-digital-limited.png?v=attq88XF4s6ZSVYVS-lithium-digital.png-2208-image-png-2026-07-30T19%3A59%3A46.000Z"
         },
         {
           "name": "Lukka Inc",
@@ -535,7 +535,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.texture.capital",
           "description": "14 Wall Street, 20 Floor,\r\nNew York, NY 10005",
-          "logoPath": "members-assets/texture-capital-holdings-corp.svg?v=attmiFnP7uJby5ZvE-Texture_Vertical_Logo_Yellow_Offwhite.svg-2340-image-svg-xml-2026-07-24T17%3A10%3A35.000Z"
+          "logoPath": "members-assets/texture-capital-holdings-corp.svg?v=attmiFnP7uJby5ZvE-Texture_Vertical_Logo_Yellow_Offwhite.svg-2340-image-svg-xml-2026-07-30T19%3A50%3A02.000Z"
         },
         {
           "name": "The Tie Inc",
@@ -549,14 +549,14 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.edel.finance",
           "description": "Name: Titan Labs Limited\r\nAddress: 3rd Floor, Ritter House, Road Town Tortola, British Virgin Islands",
-          "logoPath": "members-assets/titan-labs-limited.svg?v=attT0AhPJbH6wARlj-Profile-Bright.svg-3864-image-svg-xml-2026-07-24T17%3A08%3A38.000Z"
+          "logoPath": "members-assets/titan-labs-limited.svg?v=attT0AhPJbH6wARlj-Profile-Bright.svg-3864-image-svg-xml-2026-07-30T19%3A50%3A05.000Z"
         },
         {
           "name": "Tokenovate Ltd",
           "tier": "General",
           "website": "https://www.tokenovate.com/",
           "description": "Tokenovate\r\n184 Cambridge Science Park Rd, \r\nMilton Rd, Milton, \r\nCambridge CB4 0GA\r\nUnited Kingdom",
-          "logoPath": "members-assets/tokenovate-ltd.png?v=att3J2PGVV8dIf5kT-Tokenovate_NewLogo_White.png-30871-image-png-2026-07-22T14%3A49%3A54.000Z"
+          "logoPath": "members-assets/tokenovate-ltd.png?v=att3J2PGVV8dIf5kT-Tokenovate_NewLogo_White.png-30871-image-png-2026-07-30T19%3A49%3A59.000Z"
         },
         {
           "name": "Transcend Street Solutions Inc.",
@@ -591,7 +591,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.visa.com/en-us",
           "description": "300 Toni Stone Xing, San Francisco, CA 94158",
-          "logoPath": "members-assets/visa-inc.svg?v=attDxCzOvlMtbsWxi-Visa_White.svg-18460-image-svg-xml-2026-07-27T14%3A04%3A38.000Z"
+          "logoPath": "members-assets/visa-inc.svg?v=attDxCzOvlMtbsWxi-Visa_White.svg-18460-image-svg-xml-2026-07-30T19%3A50%3A48.000Z"
         },
         {
           "name": "Zeppelin Group Ltd",
@@ -639,14 +639,14 @@ window.MEMBERS_DATA = {
           "tier": "Associate",
           "website": "https://isda.org",
           "description": "10 E. 53rd Street, 9th Floor, New York, NY 10022, United States",
-          "logoPath": "members-assets/international-swaps-and-derivatives-association.png?v=attHGumn2M7A4wVAi-ISDA-Logo-1.png-11790-image-png-2026-05-21T15%3A45%3A47.000Z"
+          "logoPath": "members-assets/international-swaps-and-derivatives-association.png?v=attHGumn2M7A4wVAi-ISDA-Logo-1.png-11790-image-png-2026-07-30T19%3A54%3A41.000Z"
         },
         {
           "name": "The International Securities Lending Association",
           "tier": "Associate",
           "website": "https://www.islagroup.org",
           "description": "The International Securities Lending Association (ISLA),\r\n2nd Floor, 107 Cheapside, London EC2V 6DN",
-          "logoPath": "members-assets/the-international-securities-lending-association.svg?v=attNl9bksLrpRS7yW-ISLA-White-Letters.svg-42628-image-svg-xml-2026-07-24T17%3A16%3A54.000Z"
+          "logoPath": "members-assets/the-international-securities-lending-association.svg?v=attNl9bksLrpRS7yW-ISLA-White-Letters.svg-42628-image-svg-xml-2026-07-30T19%3A50%3A09.000Z"
         }
       ]
     }
