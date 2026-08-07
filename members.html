@@ -274,6 +274,7 @@
       const tabsRoot = document.getElementById("tier-tabs");
       const contentRoot = document.getElementById("members-content");
       const tiers = Array.isArray(data.tiers) ? data.tiers : [];
+      const forcedNoLogoMembers = new Set(["Visa Inc."]);
 
       if (!tiers.length) {
         contentRoot.innerHTML =
@@ -304,8 +305,8 @@
 
       function renderCards() {
         const tier = tiers.find((entry) => entry.slug === activeTier) || tiers[0];
-        const membersWithLogos = tier.members.filter((member) => member.logoPath);
-        const membersWithoutLogos = tier.members.filter((member) => !member.logoPath);
+        const membersWithLogos = tier.members.filter((member) => member.logoPath && !forcedNoLogoMembers.has(member.name));
+        const membersWithoutLogos = tier.members.filter((member) => !member.logoPath || forcedNoLogoMembers.has(member.name));
 
         if (!tier.members.length) {
           contentRoot.innerHTML =
