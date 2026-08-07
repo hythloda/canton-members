@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-08-03T14:26:55.757Z",
+  "updatedAt": "2026-08-07T18:33:55.747Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -88,7 +88,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.us.hsbc.com/",
           "description": "8 Canada Square, London, City of London E14 5HQ, United Kingdom",
-          "logoPath": "members-assets/hsbc.png?v=attyHBWvMTMw0W8kg-logo_hsbc.png-2137-image-png-2026-08-03T13%3A57%3A32.000Z"
+          "logoPath": "members-assets/hsbc.png?v=attyHBWvMTMw0W8kg-logo_hsbc.png-2137-image-png-2026-08-03T16%3A40%3A06.000Z"
         },
         {
           "name": "IntellectEU",
@@ -171,7 +171,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://avrofi.com/",
           "description": "34 Shrewsbury Ave, Suite 1C, Red Bank, NJ 07701",
-          "logoPath": "members-assets/avro-digital-inc.svg?v=attNLlsQWSllx6wqM-avrofi-a-mark-white.svg-403-image-svg-xml-2026-07-22T14%3A39%3A28.000Z"
+          "logoPath": "members-assets/avro-digital-inc.svg?v=attNLlsQWSllx6wqM-avrofi-a-mark-white.svg-403-image-svg-xml-2026-08-05T23%3A05%3A11.000Z"
         },
         {
           "name": "BitSafe",
@@ -241,7 +241,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://chata.ai/",
           "description": "1210, 530 - 8th Ave SW, Calgary, AB T2P 3S8",
-          "logoPath": "members-assets/chata-technologies-inc.png?v=attFfhG35GhzSqDS4-Chata-RGB-Blue---248px.png-11606-image-png-2026-07-27T20%3A35%3A10.000Z"
+          "logoPath": "members-assets/chata-technologies-inc.png?v=attFfhG35GhzSqDS4-Chata-RGB-Blue---248px.png-11606-image-png-2026-08-04T15%3A16%3A08.000Z"
         },
         {
           "name": "Copper Markets (Switzerland) AG",
@@ -304,7 +304,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.fairmint.com/",
           "description": "8 The Green Ste300, Dover, Delaware 19901, United States",
-          "logoPath": "members-assets/fairmint-inc.png?v=attURmv4ldSbMq4ZF-logo_fairmint.png-5887-image-png-2026-07-27T20%3A35%3A10.000Z"
+          "logoPath": "members-assets/fairmint-inc.png?v=attURmv4ldSbMq4ZF-logo_fairmint.png-5887-image-png-2026-08-04T15%3A16%3A08.000Z"
         },
         {
           "name": "Figment Inc",
@@ -367,7 +367,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.kaiko.com/",
           "description": "500 7th Ave, Suite 08B104, New York, New York 10018, United States",
-          "logoPath": "members-assets/kaiko.png?v=attg4jTHQsyT58b46-logo_kaiko.png-3810-image-png-2026-07-01T14%3A49%3A12.000Z"
+          "logoPath": "members-assets/kaiko.png?v=attg4jTHQsyT58b46-logo_kaiko.png-3810-image-png-2026-08-03T14%3A29%3A39.000Z"
         },
         {
           "name": "Kaleido",
@@ -556,7 +556,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.tokenovate.com/",
           "description": "Tokenovate\r\n184 Cambridge Science Park Rd, \r\nMilton Rd, Milton, \r\nCambridge CB4 0GA\r\nUnited Kingdom",
-          "logoPath": "members-assets/tokenovate-ltd.png?v=att3J2PGVV8dIf5kT-Tokenovate_NewLogo_White.png-30871-image-png-2026-07-30T19%3A49%3A59.000Z"
+          "logoPath": "members-assets/tokenovate-ltd.png?v=att3J2PGVV8dIf5kT-Tokenovate_NewLogo_White.png-30871-image-png-2026-08-04T15%3A16%3A06.000Z"
         },
         {
           "name": "Transcend Street Solutions Inc.",
@@ -585,13 +585,6 @@ window.MEMBERS_DATA = {
           "website": "https://usig.digital/",
           "description": "1043 The Parkway, Mamaroneck, NY 10543",
           "logoPath": "members-assets/usig-digital-inc.jpg?v=atthrmjwKZpTYTTml-USG_Master_Logo_Dark.jpg.jpg-340001-image-jpeg-2026-05-14T15%3A25%3A20.000Z"
-        },
-        {
-          "name": "Visa Inc.",
-          "tier": "General",
-          "website": "https://www.visa.com/en-us",
-          "description": "300 Toni Stone Xing, San Francisco, CA 94158",
-          "logoPath": ""
         },
         {
           "name": "Zeppelin Group Ltd",
@@ -632,7 +625,7 @@ window.MEMBERS_DATA = {
           "tier": "Associate",
           "website": "https://www.hkma.gov.hk/eng/",
           "description": "55/F Two International Finance Centre, 8 Finance Street, Central, Hong Kong",
-          "logoPath": "members-assets/hong-kong-monetary-authority.png?v=attdmYLwvZUi2Uaok-Untitled-design-16.png-8649-image-png-2026-06-18T14%3A31%3A07.000Z"
+          "logoPath": "members-assets/hong-kong-monetary-authority.png?v=attdmYLwvZUi2Uaok-Untitled-design-16.png-8649-image-png-2026-08-06T11%3A39%3A48.000Z"
         },
         {
           "name": "International Swaps and Derivatives Association",
