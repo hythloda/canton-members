@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-08-07T18:33:55.747Z",
+  "updatedAt": "2026-08-07T18:57:55.102Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -563,7 +563,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.linkedin.com/company/3106214",
           "description": "371 Hoes Lane\r\nSuite 205\r\nPiscataway, NJ\r\n08854",
-          "logoPath": ""
+          "logoPath": "members-assets/transcend-street-solutions-inc.png?v=attI051S3UGBE5vBD-download.png-26007-image-png-2026-08-07T18%3A56%3A34.000Z"
         },
         {
           "name": "TRM Labs",
