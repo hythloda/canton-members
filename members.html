@@ -274,7 +274,7 @@
       const tabsRoot = document.getElementById("tier-tabs");
       const contentRoot = document.getElementById("members-content");
       const tiers = Array.isArray(data.tiers) ? data.tiers : [];
-      const forcedNoLogoMembers = new Set(["Visa Inc."]);
+      const forcedNoLogoMembers = new Set(["Visa Inc.", "Lloyds Bank Plc"]);
 
       if (!tiers.length) {
         contentRoot.innerHTML =
