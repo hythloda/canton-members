@@ -337,7 +337,6 @@
         const missingMarkup = membersWithoutLogos.length
           ? '<section class="missing-section">' +
               '<h2>Members without logos</h2>' +
-              '<p>These members are included in this tier but do not currently have a logo on file.</p>' +
               '<ul class="missing-list">' +
                 membersWithoutLogos.map((member) => '<li>' + escapeHtml(member.name) + '</li>').join('') +
               '</ul>' +
