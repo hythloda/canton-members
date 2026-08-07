@@ -591,7 +591,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.visa.com/en-us",
           "description": "300 Toni Stone Xing, San Francisco, CA 94158",
-          "logoPath": "members-assets/visa-inc.svg?v=attDxCzOvlMtbsWxi-Visa_White.svg-18460-image-svg-xml-2026-07-30T19%3A50%3A48.000Z"
+          "logoPath": ""
         },
         {
           "name": "Zeppelin Group Ltd",
