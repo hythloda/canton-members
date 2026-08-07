@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-08-07T19:01:16.499Z",
+  "updatedAt": "2026-08-07T19:04:45.664Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -426,6 +426,13 @@ window.MEMBERS_DATA = {
           "logoPath": "members-assets/lithium-digital-limited.png?v=attq88XF4s6ZSVYVS-lithium-digital.png-2208-image-png-2026-07-30T19%3A59%3A46.000Z"
         },
         {
+          "name": "Lloyds Bank Plc",
+          "tier": "General",
+          "website": "https://www.lloydsbank.com/",
+          "description": "10 Gresham Street, London EC2V 7AE, United Kingdom",
+          "logoPath": ""
+        },
+        {
           "name": "Lukka Inc",
           "tier": "General",
           "website": "https://lukka.tech/",
@@ -585,6 +592,13 @@ window.MEMBERS_DATA = {
           "website": "https://usig.digital/",
           "description": "1043 The Parkway, Mamaroneck, NY 10543",
           "logoPath": "members-assets/usig-digital-inc.jpg?v=atthrmjwKZpTYTTml-USG_Master_Logo_Dark.jpg.jpg-340001-image-jpeg-2026-05-14T15%3A25%3A20.000Z"
+        },
+        {
+          "name": "Visa Inc.",
+          "tier": "General",
+          "website": "https://www.visa.com/en-us",
+          "description": "300 Toni Stone Xing, San Francisco, CA 94158",
+          "logoPath": ""
         },
         {
           "name": "Zeppelin Group Ltd",

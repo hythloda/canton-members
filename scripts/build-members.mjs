@@ -56,6 +56,12 @@ function getConfig() {
     websiteEnabledField: process.env.AIRTABLE_WEBSITE_ENABLED_FIELD || "",
     urlField: process.env.AIRTABLE_URL_FIELD || "Website",
     descriptionField: process.env.AIRTABLE_DESCRIPTION_FIELD || "Address",
+    forcedNoLogoIncludeMembers: new Set(
+      (process.env.AIRTABLE_FORCE_NO_LOGO_INCLUDE_MEMBERS || "Visa Inc.|Lloyds Bank Plc")
+        .split("|")
+        .map((value) => value.trim())
+        .filter(Boolean)
+    ),
     approvedValues: (process.env.AIRTABLE_APPROVED_VALUES || "yes")
       .split(",")
       .map((value) => value.trim().toLowerCase())
@@ -132,17 +138,18 @@ async function mapRecord(record, config, logoCache) {
     return null;
   }
 
+  const name = toText(fields[config.nameField]) || "Untitled member";
   const logoApproved = isApproved(fields[config.logoApprovedField], config.approvedValues);
+  const forcedNoLogoInclude = config.forcedNoLogoIncludeMembers.has(name);
 
-  if (config.logoApprovedField && !logoApproved) {
+  if (config.logoApprovedField && !logoApproved && !forcedNoLogoInclude) {
     return null;
   }
 
-  const name = toText(fields[config.nameField]) || "Untitled member";
   const tier = toText(fields[config.tierField]) || "General";
   const website = normalizeUrl(toText(fields[config.urlField]));
   const description = toText(fields[config.descriptionField]);
-  const attachment = Array.isArray(fields[config.logoField]) ? fields[config.logoField][0] : null;
+  const attachment = forcedNoLogoInclude ? null : (Array.isArray(fields[config.logoField]) ? fields[config.logoField][0] : null);
   const logoVersion = buildLogoVersion(attachment, fields[config.logoModifiedField], record.id);
   const logoPath = await downloadLogo(attachment, name, record.id, logoVersion, logoCache);
 
