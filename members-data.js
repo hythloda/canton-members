@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-08-10T12:55:33.862Z",
+  "updatedAt": "2026-08-17T12:32:30.910Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -60,7 +60,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.dtcc.com/",
           "description": "18301 Bermuda Green Dr, Tampa, Florida 33647, United States",
-          "logoPath": "members-assets/depository-trust-and-clearing-corporation-dtcc.png?v=attaQunRoBkpTsXed-logo_dtcc.png-2455-image-png-2026-07-14T16%3A34%3A11.000Z"
+          "logoPath": "members-assets/depository-trust-and-clearing-corporation-dtcc.png?v=attaQunRoBkpTsXed-logo_dtcc.png-2455-image-png-2026-08-12T16%3A21%3A31.000Z"
         },
         {
           "name": "Digital Asset (Switzerland) GmbH",
@@ -167,6 +167,13 @@ window.MEMBERS_DATA = {
           "logoPath": "members-assets/angelhack-pte-ltd.png?v=attjMKDUrxZKJVZt1-logo_angelhack.png-3489-image-png-2026-07-03T13%3A59%3A04.000Z"
         },
         {
+          "name": "Avii Systems Inc.",
+          "tier": "General",
+          "website": "https://oneswap.cc",
+          "description": "313, 175 Bluxome Street, San Francisco, CA, 94107",
+          "logoPath": ""
+        },
+        {
           "name": "Avro Digital Inc",
           "tier": "General",
           "website": "https://avrofi.com/",
@@ -202,11 +209,18 @@ window.MEMBERS_DATA = {
           "logoPath": ""
         },
         {
+          "name": "Brale Inc",
+          "tier": "General",
+          "website": "https://www.brale.xyz",
+          "description": "1301 Locust Street\r\nDes Moines, Iowa 50309",
+          "logoPath": ""
+        },
+        {
           "name": "Calastone Limited",
           "tier": "General",
           "website": "https://www.calastone.com/",
           "description": "Birchin Court, 20 Birchin Lane, London, City of London EC3V 9DU, United Kingdom",
-          "logoPath": "members-assets/calastone-limited.svg?v=attAXaMLoCwTSSg7r-calistone.svg-9237-image-svg-xml-2026-07-22T14%3A39%3A28.000Z"
+          "logoPath": "members-assets/calastone-limited.svg?v=attAXaMLoCwTSSg7r-calistone.svg-9237-image-svg-xml-2026-08-13T10%3A51%3A45.000Z"
         },
         {
           "name": "Cantor8 Technologies",
@@ -251,6 +265,13 @@ window.MEMBERS_DATA = {
           "logoPath": "members-assets/copper-markets-switzerland-ag.png?v=attwiXEFX7gWVrU1U-logo_copper.png-6539-image-png-2026-05-15T19%3A01%3A03.000Z"
         },
         {
+          "name": "CoreOps Digital Corporation",
+          "tier": "General",
+          "website": "https://cancore.io",
+          "description": "PH Iver 77, Oficina 1-01, Calle José Matilde Pérez y Ave. 5B, San Francisco, Panama City, Panama",
+          "logoPath": ""
+        },
+        {
           "name": "Cosimo Capital LLC",
           "tier": "General",
           "website": "HTTPS://cosimo.fund",
@@ -270,6 +291,13 @@ window.MEMBERS_DATA = {
           "website": "https://dedgesecurity.com/",
           "description": "Via Dos Castillas (De Las), Num 33, Planta 1, 28224 Pozuelo de Alarcón, Madrid, Spain",
           "logoPath": "members-assets/dedge-security-sl.webp?v=attuqIhZDGXXPl8uo-dedge-logo-small.webp-1908-image-webp-2026-05-13T18%3A30%3A51.000Z"
+        },
+        {
+          "name": "Dune Labs Limited",
+          "tier": "General",
+          "website": "https://rocky.exchange/",
+          "description": "2 Science Park Drive #01-08 Singapore 118222",
+          "logoPath": "members-assets/dune-labs-limited.svg?v=attoXk8pgXifelXVY-rocky_color_logo_blackbg.svg-16740-image-svg-xml-2026-08-14T00%3A31%3A39.000Z"
         },
         {
           "name": "Edge & Node Ventures Inc.",
@@ -454,6 +482,13 @@ window.MEMBERS_DATA = {
           "logoPath": "members-assets/moodys.png?v=attOSABcpbdhFutYi-logo_moodys.png-1866-image-png-2026-05-13T18%3A30%3A51.000Z"
         },
         {
+          "name": "Moonsong Labs, Inc.",
+          "tier": "General",
+          "website": "https://moonsonglabs.com/",
+          "description": "1500 District Ave, Burlington, MA 01803",
+          "logoPath": "members-assets/moonsong-labs-inc.svg?v=att94iFXZRw2yJPIy-moonsong-logo-white.svg-12790-image-svg-xml-2026-08-12T16%3A21%3A35.000Z"
+        },
+        {
           "name": "MPCH",
           "tier": "General",
           "website": "https://mpch.com/",
@@ -465,7 +500,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.noves.fi/",
           "description": "7533 S Center View Ct #4862, West Jordan, Utah 84084, United States",
-          "logoPath": "members-assets/noves-inc.png?v=attj70L6OXQCBEPZQ-logo_noves.png-3302-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/noves-inc.png?v=attj70L6OXQCBEPZQ-logo_noves.png-3302-image-png-2026-08-12T16%3A21%3A19.000Z"
         },
         {
           "name": "OnRails Ltd",
@@ -535,7 +570,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://templedigitalgroup.com/",
           "description": "228 Park Ave S, New York, New York 10003, United States",
-          "logoPath": "members-assets/temple.png?v=att0koDKiABR0hOrq-logo_temple.png-6474-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/temple.png?v=att0koDKiABR0hOrq-logo_temple.png-6474-image-png-2026-08-12T19%3A18%3A45.000Z"
         },
         {
           "name": "Texture Capital Holdings Corp.",
@@ -549,7 +584,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.thetie.io/",
           "description": "555 Madison Ave. Floor 16, New York, New York 10022, United States",
-          "logoPath": "members-assets/the-tie-inc.png?v=att0LRW0JxyuNFvBp-logo_thetie.png-1313-image-png-2026-05-13T18%3A30%3A51.000Z"
+          "logoPath": "members-assets/the-tie-inc.png?v=att0LRW0JxyuNFvBp-logo_thetie.png-1313-image-png-2026-08-12T16%3A21%3A29.000Z"
         },
         {
           "name": "Titan Labs Limited",
@@ -598,6 +633,13 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.visa.com/en-us",
           "description": "300 Toni Stone Xing, San Francisco, CA 94158",
+          "logoPath": ""
+        },
+        {
+          "name": "Wormhole Foundation, a Cayman Islands foundation company",
+          "tier": "General",
+          "website": "https://wormhole.foundation/",
+          "description": "Highvern Cayman Limited \n2nd Floor, Elgin Court, Elgin Avenue\nGeorge Town\nGrand Cayman KY1-1106, Cayman Islands.",
           "logoPath": ""
         },
         {
