@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-08-24T12:37:11.944Z",
+  "updatedAt": "2026-08-31T18:37:52.241Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -150,7 +150,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://trade.fast",
           "description": "Advanced Tower Building, First floor, Ricardo Arias Street, Panama City, Republic of Panama",
-          "logoPath": "members-assets/21m-labs-inc.svg?v=attBmG9NbLqEiJcRO-Logo_Dark.svg-5005-image-svg-xml-2026-07-30T19%3A50%3A11.000Z"
+          "logoPath": "members-assets/21m-labs-inc.svg?v=attBmG9NbLqEiJcRO-Logo_Dark.svg-5005-image-svg-xml-2026-08-25T18%3A16%3A18.000Z"
         },
         {
           "name": "4M Group LLC",
@@ -171,7 +171,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://oneswap.cc",
           "description": "313, 175 Bluxome Street, San Francisco, CA, 94107",
-          "logoPath": ""
+          "logoPath": "members-assets/avii-systems-inc.svg?v=att0diM5f5qAqivwT-Slide-16_9-14.svg-4310-image-svg-xml-2026-08-25T18%3A18%3A28.000Z"
         },
         {
           "name": "Avro Digital Inc",
@@ -213,7 +213,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.brale.xyz",
           "description": "1301 Locust Street\r\nDes Moines, Iowa 50309",
-          "logoPath": ""
+          "logoPath": "members-assets/brale-inc.svg?v=attz4nd3RGht9DFS7-White-Brale1.svg-788-image-svg-xml-2026-08-25T18%3A19%3A12.000Z"
         },
         {
           "name": "Calastone Limited",
@@ -269,7 +269,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://cancore.io",
           "description": "PH Iver 77, Oficina 1-01, Calle José Matilde Pérez y Ave. 5B, San Francisco, Panama City, Panama",
-          "logoPath": ""
+          "logoPath": "members-assets/coreops-digital-corporation.svg?v=attunyiOTGwCjqfUb-logo-dark.svg-1854-image-svg-xml-2026-08-25T18%3A19%3A43.000Z"
         },
         {
           "name": "Cosimo Capital LLC",
@@ -297,14 +297,14 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://rocky.exchange/",
           "description": "2 Science Park Drive #01-08 Singapore 118222",
-          "logoPath": "members-assets/dune-labs-limited.svg?v=attoXk8pgXifelXVY-rocky_color_logo_blackbg.svg-16740-image-svg-xml-2026-08-14T00%3A31%3A39.000Z"
+          "logoPath": "members-assets/dune-labs-limited.svg?v=attoXk8pgXifelXVY-rocky_color_logo_blackbg.svg-16740-image-svg-xml-2026-08-28T17%3A17%3A28.000Z"
         },
         {
           "name": "Edge & Node Ventures Inc.",
           "tier": "General",
           "website": "https://www.edgeandnode.com/",
           "description": "548 Market Street\r\nPMB 91267\r\nSan Francisco CA 94104",
-          "logoPath": "members-assets/edge-node-ventures-inc.svg?v=att7sbf75F8Lnrjk5-EN-Wordmark-White-2x.svg-13732-image-svg-xml-2026-07-30T19%3A50%3A07.000Z"
+          "logoPath": "members-assets/edge-node-ventures-inc.svg?v=att7sbf75F8Lnrjk5-EN-Wordmark-White-2x.svg-13732-image-svg-xml-2026-08-25T18%3A17%3A24.000Z"
         },
         {
           "name": "Enzyme Foundation",
@@ -381,14 +381,21 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://Halborn.com",
           "description": "13727 SW 152nd Street, 1303, Miami, FL, 33177, US",
-          "logoPath": "members-assets/halborn-inc.svg?v=attKfteC0kfhGdjgH-halborn_black_logo.svg-1659-image-svg-xml-2026-07-30T19%3A50%3A09.000Z"
+          "logoPath": "members-assets/halborn-inc.svg?v=attKfteC0kfhGdjgH-halborn_black_logo.svg-1659-image-svg-xml-2026-08-25T18%3A17%3A30.000Z"
         },
         {
           "name": "Hecto Finance Limited",
           "tier": "General",
           "website": "https://www.hecto.inc",
           "description": "3rd Floor Ritter House, Wickhams Cay II, Road Town, Tortola, VG1110, British Virgin Islands",
-          "logoPath": "members-assets/hecto-finance-limited.svg?v=attQCKnzQ2BomBsqj-Hetco-Logo.svg-17950-image-svg-xml-2026-07-30T19%3A50%3A04.000Z"
+          "logoPath": "members-assets/hecto-finance-limited.svg?v=attQCKnzQ2BomBsqj-Hetco-Logo.svg-17950-image-svg-xml-2026-08-25T18%3A17%3A08.000Z"
+        },
+        {
+          "name": "Infosys Limited",
+          "tier": "General",
+          "website": "https://www.infosys.com",
+          "description": "Infosys Limited, \r\nPlot No. 44, Hosur Main Road, \r\nElectronics City, Bengaluru, 560100, Karnataka, India",
+          "logoPath": ""
         },
         {
           "name": "Kaiko",
@@ -496,6 +503,13 @@ window.MEMBERS_DATA = {
           "logoPath": "members-assets/mpch.png?v=attVPeshuiLP8QSuX-logo_mpch-1.png-5283-image-png-2026-05-15T18%3A59%3A16.000Z"
         },
         {
+          "name": "No Witness Labs LLC",
+          "tier": "General",
+          "website": "https://nowitnesslabs.com/",
+          "description": "1301 N Broadway STE 32109\r\nLos Angeles, CA 90012",
+          "logoPath": "members-assets/no-witness-labs-llc.svg?v=attJXEjFezxEMjwO0-Logo-No-Witness-Original.svg-27241-image-svg-xml-2026-08-28T17%3A17%3A28.000Z"
+        },
+        {
           "name": "Noves Inc",
           "tier": "General",
           "website": "https://www.noves.fi/",
@@ -577,7 +591,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.texture.capital",
           "description": "14 Wall Street, 20 Floor,\r\nNew York, NY 10005",
-          "logoPath": "members-assets/texture-capital-holdings-corp.svg?v=attmiFnP7uJby5ZvE-Texture_Vertical_Logo_Yellow_Offwhite.svg-2340-image-svg-xml-2026-07-30T19%3A50%3A02.000Z"
+          "logoPath": "members-assets/texture-capital-holdings-corp.svg?v=attmiFnP7uJby5ZvE-Texture_Vertical_Logo_Yellow_Offwhite.svg-2340-image-svg-xml-2026-08-25T18%3A17%3A13.000Z"
         },
         {
           "name": "The Tie Inc",
@@ -591,14 +605,14 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.edel.finance",
           "description": "Name: Titan Labs Limited\r\nAddress: 3rd Floor, Ritter House, Road Town Tortola, British Virgin Islands",
-          "logoPath": "members-assets/titan-labs-limited.svg?v=attT0AhPJbH6wARlj-Profile-Bright.svg-3864-image-svg-xml-2026-07-30T19%3A50%3A05.000Z"
+          "logoPath": "members-assets/titan-labs-limited.svg?v=attT0AhPJbH6wARlj-Profile-Bright.svg-3864-image-svg-xml-2026-08-25T18%3A17%3A16.000Z"
         },
         {
           "name": "Tokenovate Ltd",
           "tier": "General",
           "website": "https://www.tokenovate.com/",
           "description": "Tokenovate\r\n184 Cambridge Science Park Rd, \r\nMilton Rd, Milton, \r\nCambridge CB4 0GA\r\nUnited Kingdom",
-          "logoPath": "members-assets/tokenovate-ltd.png?v=att3J2PGVV8dIf5kT-Tokenovate_NewLogo_White.png-30871-image-png-2026-08-04T15%3A16%3A06.000Z"
+          "logoPath": "members-assets/tokenovate-ltd.png?v=att3J2PGVV8dIf5kT-Tokenovate_NewLogo_White.png-30871-image-png-2026-08-25T18%3A16%3A25.000Z"
         },
         {
           "name": "Transcend Street Solutions Inc.",
@@ -695,7 +709,7 @@ window.MEMBERS_DATA = {
           "tier": "Associate",
           "website": "https://www.islagroup.org",
           "description": "The International Securities Lending Association (ISLA),\r\n2nd Floor, 107 Cheapside, London EC2V 6DN",
-          "logoPath": "members-assets/the-international-securities-lending-association.svg?v=attNl9bksLrpRS7yW-ISLA-White-Letters.svg-42628-image-svg-xml-2026-07-30T19%3A50%3A09.000Z"
+          "logoPath": "members-assets/the-international-securities-lending-association.svg?v=attNl9bksLrpRS7yW-ISLA-White-Letters.svg-42628-image-svg-xml-2026-08-25T18%3A17%3A36.000Z"
         }
       ]
     }
