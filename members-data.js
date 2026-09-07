@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-08-31T18:37:52.241Z",
+  "updatedAt": "2026-09-07T17:04:29.010Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -130,7 +130,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.t-rize.io/",
           "description": "2500, 1155 Boul. Rene-Levesque, Montreal, Quebec H3B 3X7, Canada",
-          "logoPath": "members-assets/t-rize-group.png?v=attfJSxPNKrtId6K1-logo_trize.png-8686-image-png-2026-05-25T19%3A27%3A35.000Z"
+          "logoPath": "members-assets/t-rize-group.png?v=attfJSxPNKrtId6K1-logo_trize.png-8686-image-png-2026-09-01T14%3A18%3A03.000Z"
         },
         {
           "name": "Tradeweb Markets LLC",
@@ -696,6 +696,13 @@ window.MEMBERS_DATA = {
           "website": "https://www.hkma.gov.hk/eng/",
           "description": "55/F Two International Finance Centre, 8 Finance Street, Central, Hong Kong",
           "logoPath": "members-assets/hong-kong-monetary-authority.png?v=attdmYLwvZUi2Uaok-Untitled-design-16.png-8649-image-png-2026-08-06T11%3A39%3A48.000Z"
+        },
+        {
+          "name": "ICMA",
+          "tier": "Associate",
+          "website": "",
+          "description": "",
+          "logoPath": ""
         },
         {
           "name": "International Swaps and Derivatives Association",
