@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-09-07T17:04:29.010Z",
+  "updatedAt": "2026-09-14T17:27:35.014Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -11,7 +11,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.fivenorthdigital.com/",
           "description": "142 West 57th Street 11th Floor, New York, New York 10019, United States",
-          "logoPath": "members-assets/5-north.png?v=attXXC6RGXCPE9Ufn-logo_5north-1.png-2162-image-png-2026-07-30T19%3A57%3A29.000Z"
+          "logoPath": "members-assets/5-north.png?v=attXXC6RGXCPE9Ufn-logo_5north-1.png-2162-image-png-2026-09-14T11%3A14%3A24.000Z"
         },
         {
           "name": "7RIDGE",
@@ -39,7 +39,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.broadridge.com/",
           "description": "5 Dakota Drive, Lake Success, New York 11042, United States",
-          "logoPath": "members-assets/broadridge-financial-solutions.png?v=att2EzBiM710jqMru-logo_broadridge-1.png-2761-image-png-2026-08-03T13%3A57%3A34.000Z"
+          "logoPath": "members-assets/broadridge-financial-solutions.png?v=att2EzBiM710jqMru-logo_broadridge-1.png-2761-image-png-2026-09-11T19%3A23%3A11.000Z"
         },
         {
           "name": "Canton Strategic Holdings",
@@ -53,14 +53,14 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.cumberland.io/",
           "description": "540 W Madison Ste 2500, Chicago, Illinois 60661, United States",
-          "logoPath": "members-assets/cumberland-sv-llc.png?v=attbVK0UJK6kntDQw-logo_cumberland.png-2939-image-png-2026-07-01T14%3A44%3A11.000Z"
+          "logoPath": "members-assets/cumberland-sv-llc.png?v=attbVK0UJK6kntDQw-logo_cumberland.png-2939-image-png-2026-09-11T19%3A04%3A48.000Z"
         },
         {
           "name": "Depository Trust and Clearing Corporation (DTCC)",
           "tier": "Premier",
           "website": "https://www.dtcc.com/",
           "description": "18301 Bermuda Green Dr, Tampa, Florida 33647, United States",
-          "logoPath": "members-assets/depository-trust-and-clearing-corporation-dtcc.png?v=attaQunRoBkpTsXed-logo_dtcc.png-2455-image-png-2026-08-12T16%3A21%3A31.000Z"
+          "logoPath": "members-assets/depository-trust-and-clearing-corporation-dtcc.png?v=attaQunRoBkpTsXed-logo_dtcc.png-2455-image-png-2026-09-11T19%3A04%3A48.000Z"
         },
         {
           "name": "Digital Asset (Switzerland) GmbH",
@@ -74,21 +74,21 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.euroclear.com/en.html",
           "description": "1 Boulevard du Roi Albert II, Brussels, Brussels 1000, Belgium",
-          "logoPath": "members-assets/euroclear.png?v=attSaWdfTeoQ0qNDS-logo_euroclear-1.png-10332-image-png-2026-07-23T14%3A18%3A41.000Z"
+          "logoPath": "members-assets/euroclear.png?v=attSaWdfTeoQ0qNDS-logo_euroclear-1.png-10332-image-png-2026-09-11T19%3A04%3A52.000Z"
         },
         {
           "name": "Goldman Sachs & Co. LLC",
           "tier": "Premier",
           "website": "https://www.goldmansachs.com/",
           "description": "30 Hudson Street, 32nd Floor, Jersey City, New Jersey 07302, United States",
-          "logoPath": "members-assets/goldman-sachs-co-llc.png?v=attO2XuKtYtXEQnBC-Goldman-Sachs-logo.png-9690-image-png-2026-07-22T14%3A40%3A31.000Z"
+          "logoPath": "members-assets/goldman-sachs-co-llc.png?v=attO2XuKtYtXEQnBC-Goldman-Sachs-logo.png-9690-image-png-2026-09-11T18%3A53%3A32.000Z"
         },
         {
           "name": "HSBC",
           "tier": "Premier",
           "website": "https://www.us.hsbc.com/",
           "description": "8 Canada Square, London, City of London E14 5HQ, United Kingdom",
-          "logoPath": "members-assets/hsbc.png?v=attyHBWvMTMw0W8kg-logo_hsbc.png-2137-image-png-2026-08-03T16%3A40%3A06.000Z"
+          "logoPath": "members-assets/hsbc.png?v=attyHBWvMTMw0W8kg-logo_hsbc.png-2137-image-png-2026-09-11T19%3A04%3A52.000Z"
         },
         {
           "name": "IntellectEU",
@@ -102,35 +102,35 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.libertycityventures.com/",
           "description": "120 E. 16th St., 12th Floor, New York, New York 10003, United States",
-          "logoPath": "members-assets/liberty-city-ventures.png?v=attnWL3eGDpffa0TO-lvc_logo-1.png-7423-image-png-2026-07-01T14%3A44%3A15.000Z"
+          "logoPath": "members-assets/liberty-city-ventures.png?v=attnWL3eGDpffa0TO-lvc_logo-1.png-7423-image-png-2026-09-11T19%3A04%3A52.000Z"
         },
         {
           "name": "LiquidityTech Limited",
           "tier": "Premier",
           "website": "https://www.liquiditytech.com/en",
           "description": "#09-01, 9 Battery Rd, Singapore, Central Singapore 049910, Singapore",
-          "logoPath": "members-assets/liquiditytech-limited.png?v=attcDbHn47QXjuCZ3-logo_ltp.png-4506-image-png-2026-07-22T14%3A48%3A56.000Z"
+          "logoPath": "members-assets/liquiditytech-limited.png?v=attcDbHn47QXjuCZ3-logo_ltp.png-4506-image-png-2026-09-11T19%3A04%3A52.000Z"
         },
         {
           "name": "Obsidian Systems",
           "tier": "Premier",
           "website": "https://obsidian.systems/",
           "description": "2093 Philadelphia Pike #8128, Claymont, Delaware 19703, United States",
-          "logoPath": "members-assets/obsidian-systems.png?v=attQoRjWZNHODaGUx-logo_obsidian.png-2648-image-png-2026-07-01T14%3A44%3A15.000Z"
+          "logoPath": "members-assets/obsidian-systems.png?v=attQoRjWZNHODaGUx-logo_obsidian.png-2648-image-png-2026-09-11T19%3A04%3A52.000Z"
         },
         {
           "name": "SBI Digital Asset Holdings",
           "tier": "Premier",
           "website": "https://www.sbigroup.co.jp/english/company/group/sbidah",
           "description": "Izumi Garden Tower 1-6-1 Roppongi, Minato-ku, Tokyo 106-6019, Japan",
-          "logoPath": "members-assets/sbi-digital-asset-holdings.webp?v=attUEQBqTQ6xChiwS-logo_sbi.webp-3954-image-webp-2026-07-27T13%3A39%3A17.000Z"
+          "logoPath": "members-assets/sbi-digital-asset-holdings.webp?v=attUEQBqTQ6xChiwS-logo_sbi.webp-3954-image-webp-2026-09-11T19%3A04%3A32.000Z"
         },
         {
           "name": "T-RIZE Group",
           "tier": "Premier",
           "website": "https://www.t-rize.io/",
           "description": "2500, 1155 Boul. Rene-Levesque, Montreal, Quebec H3B 3X7, Canada",
-          "logoPath": "members-assets/t-rize-group.png?v=attfJSxPNKrtId6K1-logo_trize.png-8686-image-png-2026-09-01T14%3A18%3A03.000Z"
+          "logoPath": "members-assets/t-rize-group.png?v=attfJSxPNKrtId6K1-logo_trize.png-8686-image-png-2026-09-11T19%3A03%3A03.000Z"
         },
         {
           "name": "Tradeweb Markets LLC",
@@ -150,7 +150,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://trade.fast",
           "description": "Advanced Tower Building, First floor, Ricardo Arias Street, Panama City, Republic of Panama",
-          "logoPath": "members-assets/21m-labs-inc.svg?v=attBmG9NbLqEiJcRO-Logo_Dark.svg-5005-image-svg-xml-2026-08-25T18%3A16%3A18.000Z"
+          "logoPath": "members-assets/21m-labs-inc.svg?v=attBmG9NbLqEiJcRO-Logo_Dark.svg-5005-image-svg-xml-2026-09-11T19%3A04%3A48.000Z"
         },
         {
           "name": "4M Group LLC",
@@ -171,7 +171,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://oneswap.cc",
           "description": "313, 175 Bluxome Street, San Francisco, CA, 94107",
-          "logoPath": "members-assets/avii-systems-inc.svg?v=att0diM5f5qAqivwT-Slide-16_9-14.svg-4310-image-svg-xml-2026-08-25T18%3A18%3A28.000Z"
+          "logoPath": "members-assets/avii-systems-inc.svg?v=att0diM5f5qAqivwT-Slide-16_9-14.svg-4310-image-svg-xml-2026-09-14T13%3A59%3A35.000Z"
         },
         {
           "name": "Avro Digital Inc",
@@ -199,7 +199,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.blockdaemon.com/",
           "description": "11400 W Olympic Blvd., Suite 200, PMB 215, Los Angeles, California 90064, United States",
-          "logoPath": "members-assets/blockdaemon.png?v=attgEiZ48T7vNPbwC-logo_blockdaemon.png-2009-image-png-2026-07-24T12%3A51%3A00.000Z"
+          "logoPath": "members-assets/blockdaemon.png?v=attgEiZ48T7vNPbwC-logo_blockdaemon.png-2009-image-png-2026-09-11T19%3A04%3A48.000Z"
         },
         {
           "name": "BPX Markets Limited",
@@ -213,21 +213,21 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.brale.xyz",
           "description": "1301 Locust Street\r\nDes Moines, Iowa 50309",
-          "logoPath": "members-assets/brale-inc.svg?v=attz4nd3RGht9DFS7-White-Brale1.svg-788-image-svg-xml-2026-08-25T18%3A19%3A12.000Z"
+          "logoPath": "members-assets/brale-inc.svg?v=attz4nd3RGht9DFS7-White-Brale1.svg-788-image-svg-xml-2026-09-11T19%3A04%3A48.000Z"
         },
         {
           "name": "Calastone Limited",
           "tier": "General",
           "website": "https://www.calastone.com/",
           "description": "Birchin Court, 20 Birchin Lane, London, City of London EC3V 9DU, United Kingdom",
-          "logoPath": "members-assets/calastone-limited.svg?v=attAXaMLoCwTSSg7r-calistone.svg-9237-image-svg-xml-2026-08-13T10%3A51%3A45.000Z"
+          "logoPath": "members-assets/calastone-limited.svg?v=attAXaMLoCwTSSg7r-calistone.svg-9237-image-svg-xml-2026-09-11T19%3A03%3A32.000Z"
         },
         {
           "name": "Cantor8 Technologies",
           "tier": "General",
           "website": "https://cantor8.io/",
           "description": "14 Tregubter Rd, London, City of London SW10 9LR, United Kingdom",
-          "logoPath": "members-assets/cantor8-technologies.png?v=atttn4Ovqvz5Dnl8j-logo_cantor8.png-2339-image-png-2026-07-22T14%3A48%3A36.000Z"
+          "logoPath": "members-assets/cantor8-technologies.png?v=atttn4Ovqvz5Dnl8j-logo_cantor8.png-2339-image-png-2026-09-14T12%3A47%3A22.000Z"
         },
         {
           "name": "Cashen Labs,  Inc.",
@@ -248,7 +248,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://chainlinklabs.com/",
           "description": "1250 Broadway 36th Floor, New York, New York 10001, United States",
-          "logoPath": "members-assets/chainlink-labs.png?v=attkqqYlUHnA8dclm-logo_chainlinklabs.png-7673-image-png-2026-07-22T14%3A39%3A30.000Z"
+          "logoPath": "members-assets/chainlink-labs.png?v=attkqqYlUHnA8dclm-logo_chainlinklabs.png-7673-image-png-2026-09-11T18%3A51%3A06.000Z"
         },
         {
           "name": "Chata Technologies Inc",
@@ -269,14 +269,14 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://cancore.io",
           "description": "PH Iver 77, Oficina 1-01, Calle José Matilde Pérez y Ave. 5B, San Francisco, Panama City, Panama",
-          "logoPath": "members-assets/coreops-digital-corporation.svg?v=attunyiOTGwCjqfUb-logo-dark.svg-1854-image-svg-xml-2026-08-25T18%3A19%3A43.000Z"
+          "logoPath": "members-assets/coreops-digital-corporation.svg?v=attunyiOTGwCjqfUb-logo-dark.svg-1854-image-svg-xml-2026-09-11T19%3A04%3A48.000Z"
         },
         {
           "name": "Cosimo Capital LLC",
           "tier": "General",
           "website": "HTTPS://cosimo.fund",
           "description": "1146 W Kinzie St, Chicago, IL 60642",
-          "logoPath": "members-assets/cosimo-capital-llc.png?v=att2ZU7BeFfrZ5Qps-image.png-8178-image-png-2026-07-24T17%3A11%3A44.000Z"
+          "logoPath": "members-assets/cosimo-capital-llc.png?v=att2ZU7BeFfrZ5Qps-image.png-8178-image-png-2026-09-11T18%3A52%3A01.000Z"
         },
         {
           "name": "Cryptio LTD",
@@ -304,7 +304,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.edgeandnode.com/",
           "description": "548 Market Street\r\nPMB 91267\r\nSan Francisco CA 94104",
-          "logoPath": "members-assets/edge-node-ventures-inc.svg?v=att7sbf75F8Lnrjk5-EN-Wordmark-White-2x.svg-13732-image-svg-xml-2026-08-25T18%3A17%3A24.000Z"
+          "logoPath": "members-assets/edge-node-ventures-inc.svg?v=att7sbf75F8Lnrjk5-EN-Wordmark-White-2x.svg-13732-image-svg-xml-2026-09-11T19%3A02%3A54.000Z"
         },
         {
           "name": "Enzyme Foundation",
@@ -381,14 +381,14 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://Halborn.com",
           "description": "13727 SW 152nd Street, 1303, Miami, FL, 33177, US",
-          "logoPath": "members-assets/halborn-inc.svg?v=attKfteC0kfhGdjgH-halborn_black_logo.svg-1659-image-svg-xml-2026-08-25T18%3A17%3A30.000Z"
+          "logoPath": "members-assets/halborn-inc.svg?v=attKfteC0kfhGdjgH-halborn_black_logo.svg-1659-image-svg-xml-2026-09-11T19%3A04%3A05.000Z"
         },
         {
           "name": "Hecto Finance Limited",
           "tier": "General",
           "website": "https://www.hecto.inc",
           "description": "3rd Floor Ritter House, Wickhams Cay II, Road Town, Tortola, VG1110, British Virgin Islands",
-          "logoPath": "members-assets/hecto-finance-limited.svg?v=attQCKnzQ2BomBsqj-Hetco-Logo.svg-17950-image-svg-xml-2026-08-25T18%3A17%3A08.000Z"
+          "logoPath": "members-assets/hecto-finance-limited.svg?v=attQCKnzQ2BomBsqj-Hetco-Logo.svg-17950-image-svg-xml-2026-09-14T12%3A34%3A52.000Z"
         },
         {
           "name": "Infosys Limited",
@@ -437,14 +437,14 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.launchnodes.com/",
           "description": "71-75 Shelton Street, London, City of London WC2H 9JQ, United Kingdom",
-          "logoPath": "members-assets/launchnodes.png?v=attHBGCB6UVCbdJHy-logo_launchnodes_new.png-3299-image-png-2026-07-24T20%3A24%3A42.000Z"
+          "logoPath": "members-assets/launchnodes.png?v=attHBGCB6UVCbdJHy-logo_launchnodes_new.png-3299-image-png-2026-09-11T19%3A04%3A14.000Z"
         },
         {
           "name": "LayerZero Labs Ltd.",
           "tier": "General",
           "website": "https://layerzero.network/",
           "description": "Trinity Chambers P.O. Box 4301, Road Town, Tortola VG1110, British Virgin Islands",
-          "logoPath": "members-assets/layerzero-labs-ltd.png?v=attLoJa8ePVsAjcmu-logo_zero.png-2766-image-png-2026-07-22T14%3A49%3A21.000Z"
+          "logoPath": "members-assets/layerzero-labs-ltd.png?v=attLoJa8ePVsAjcmu-logo_zero.png-2766-image-png-2026-09-11T19%3A04%3A23.000Z"
         },
         {
           "name": "LendOS",
@@ -472,7 +472,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://lukka.tech/",
           "description": "800 Laurel Oak Dr. Suite 300, Naples, Florida 34108, United States",
-          "logoPath": "members-assets/lukka-inc.png?v=attD5vwoCA1RJL2Bn-logo_lukka.png-3260-image-png-2026-07-01T14%3A44%3A15.000Z"
+          "logoPath": "members-assets/lukka-inc.png?v=attD5vwoCA1RJL2Bn-logo_lukka.png-3260-image-png-2026-09-11T19%3A04%3A52.000Z"
         },
         {
           "name": "Modulo Labs, Inc.",
@@ -493,7 +493,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://moonsonglabs.com/",
           "description": "1500 District Ave, Burlington, MA 01803",
-          "logoPath": "members-assets/moonsong-labs-inc.svg?v=att94iFXZRw2yJPIy-moonsong-logo-white.svg-12790-image-svg-xml-2026-08-12T16%3A21%3A35.000Z"
+          "logoPath": "members-assets/moonsong-labs-inc.svg?v=att94iFXZRw2yJPIy-moonsong-logo-white.svg-12790-image-svg-xml-2026-09-09T18%3A42%3A24.000Z"
         },
         {
           "name": "MPCH",
@@ -528,7 +528,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.ownera.io/",
           "description": "16 Great Queen Street, London, City of London WC2B 5AH, United Kingdom",
-          "logoPath": "members-assets/ownera.png?v=attW5W45T6y6jvin6-logo_ownera.png-7913-image-png-2026-07-22T14%3A49%3A36.000Z"
+          "logoPath": "members-assets/ownera.png?v=attW5W45T6y6jvin6-logo_ownera.png-7913-image-png-2026-09-11T19%3A04%3A52.000Z"
         },
         {
           "name": "Pioneering Booster Limited",
@@ -573,6 +573,13 @@ window.MEMBERS_DATA = {
           "logoPath": "members-assets/send-inc.png?v=attC74oNOjtMxF5cE-logo_send.png-3013-image-png-2026-05-13T18%3A30%3A51.000Z"
         },
         {
+          "name": "Taiwan Depository & Clearing Corporation",
+          "tier": "General",
+          "website": "https://www.tdcc.com.tw/portal/en/",
+          "description": "11F. , No. 363 , Fuxing N. Rd, Taipei, Taiwan",
+          "logoPath": ""
+        },
+        {
           "name": "Taurus SA",
           "tier": "General",
           "website": "https://www.taurushq.com/",
@@ -598,7 +605,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.thetie.io/",
           "description": "555 Madison Ave. Floor 16, New York, New York 10022, United States",
-          "logoPath": "members-assets/the-tie-inc.png?v=att0LRW0JxyuNFvBp-logo_thetie.png-1313-image-png-2026-08-12T16%3A21%3A29.000Z"
+          "logoPath": "members-assets/the-tie-inc.png?v=att0LRW0JxyuNFvBp-logo_thetie.png-1313-image-png-2026-09-11T19%3A04%3A52.000Z"
         },
         {
           "name": "Titan Labs Limited",
@@ -619,14 +626,14 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.linkedin.com/company/3106214",
           "description": "371 Hoes Lane\r\nSuite 205\r\nPiscataway, NJ\r\n08854",
-          "logoPath": "members-assets/transcend-street-solutions-inc.png?v=attI051S3UGBE5vBD-download.png-26007-image-png-2026-08-07T18%3A56%3A34.000Z"
+          "logoPath": "members-assets/transcend-street-solutions-inc.png?v=attI051S3UGBE5vBD-download.png-26007-image-png-2026-09-11T19%3A04%3A52.000Z"
         },
         {
           "name": "TRM Labs",
           "tier": "General",
           "website": "https://www.trmlabs.com/",
           "description": "548 Market Street, PMB 85965, San Francisco, California 94104, United States",
-          "logoPath": "members-assets/trm-labs.png?v=att71Of4SwrKhYLe7-logo_trm.png-4243-image-png-2026-07-01T14%3A44%3A24.000Z"
+          "logoPath": "members-assets/trm-labs.png?v=att71Of4SwrKhYLe7-logo_trm.png-4243-image-png-2026-09-11T19%3A18%3A48.000Z"
         },
         {
           "name": "Ubyx Inc",
@@ -668,7 +675,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://zodia-custody.com/",
           "description": "8 Eastcheap, London, London, City of EC3M 1AE, United Kingdom",
-          "logoPath": "members-assets/zodia-custody.png?v=atttrCnUz7bXDVWVZ-logo_zodia.png-2874-image-png-2026-07-01T14%3A44%3A24.000Z"
+          "logoPath": "members-assets/zodia-custody.png?v=atttrCnUz7bXDVWVZ-logo_zodia.png-2874-image-png-2026-09-11T19%3A04%3A57.000Z"
         }
       ]
     },
