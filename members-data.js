@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-09-14T17:27:35.014Z",
+  "updatedAt": "2026-09-21T17:41:59.119Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -74,7 +74,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.euroclear.com/en.html",
           "description": "1 Boulevard du Roi Albert II, Brussels, Brussels 1000, Belgium",
-          "logoPath": "members-assets/euroclear.png?v=attSaWdfTeoQ0qNDS-logo_euroclear-1.png-10332-image-png-2026-09-11T19%3A04%3A52.000Z"
+          "logoPath": "members-assets/euroclear.png?v=attSaWdfTeoQ0qNDS-logo_euroclear-1.png-10332-image-png-2026-09-15T11%3A23%3A43.000Z"
         },
         {
           "name": "Goldman Sachs & Co. LLC",
@@ -213,7 +213,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.brale.xyz",
           "description": "1301 Locust Street\r\nDes Moines, Iowa 50309",
-          "logoPath": "members-assets/brale-inc.svg?v=attz4nd3RGht9DFS7-White-Brale1.svg-788-image-svg-xml-2026-09-11T19%3A04%3A48.000Z"
+          "logoPath": "members-assets/brale-inc.svg?v=attz4nd3RGht9DFS7-White-Brale1.svg-788-image-svg-xml-2026-09-17T15%3A38%3A20.000Z"
         },
         {
           "name": "Calastone Limited",
@@ -528,7 +528,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.ownera.io/",
           "description": "16 Great Queen Street, London, City of London WC2B 5AH, United Kingdom",
-          "logoPath": "members-assets/ownera.png?v=attW5W45T6y6jvin6-logo_ownera.png-7913-image-png-2026-09-11T19%3A04%3A52.000Z"
+          "logoPath": "members-assets/ownera.png?v=attW5W45T6y6jvin6-logo_ownera.png-7913-image-png-2026-09-17T15%3A37%3A37.000Z"
         },
         {
           "name": "Pioneering Booster Limited",
