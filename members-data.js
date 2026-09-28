@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-09-21T17:41:59.119Z",
+  "updatedAt": "2026-09-28T19:08:01.653Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -11,7 +11,7 @@ window.MEMBERS_DATA = {
           "tier": "Premier",
           "website": "https://www.fivenorthdigital.com/",
           "description": "142 West 57th Street 11th Floor, New York, New York 10019, United States",
-          "logoPath": "members-assets/5-north.png?v=attXXC6RGXCPE9Ufn-logo_5north-1.png-2162-image-png-2026-09-14T11%3A14%3A24.000Z"
+          "logoPath": "members-assets/5-north.png?v=attXXC6RGXCPE9Ufn-logo_5north-1.png-2162-image-png-2026-09-22T22%3A08%3A11.000Z"
         },
         {
           "name": "7RIDGE",
@@ -220,7 +220,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.calastone.com/",
           "description": "Birchin Court, 20 Birchin Lane, London, City of London EC3V 9DU, United Kingdom",
-          "logoPath": "members-assets/calastone-limited.svg?v=attAXaMLoCwTSSg7r-calistone.svg-9237-image-svg-xml-2026-09-11T19%3A03%3A32.000Z"
+          "logoPath": "members-assets/calastone-limited.svg?v=attAXaMLoCwTSSg7r-calistone.svg-9237-image-svg-xml-2026-09-22T22%3A08%3A01.000Z"
         },
         {
           "name": "Cantor8 Technologies",
@@ -472,7 +472,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://lukka.tech/",
           "description": "800 Laurel Oak Dr. Suite 300, Naples, Florida 34108, United States",
-          "logoPath": "members-assets/lukka-inc.png?v=attD5vwoCA1RJL2Bn-logo_lukka.png-3260-image-png-2026-09-11T19%3A04%3A52.000Z"
+          "logoPath": "members-assets/lukka-inc.png?v=attD5vwoCA1RJL2Bn-logo_lukka.png-3260-image-png-2026-09-22T22%3A07%3A06.000Z"
         },
         {
           "name": "Modulo Labs, Inc.",
@@ -552,11 +552,11 @@ window.MEMBERS_DATA = {
           "logoPath": "members-assets/proof-group.png?v=attOm8CG3cj3Dj8Cv-logo_proofgroup.png-8633-image-png-2026-05-15T19%3A03%3A27.000Z"
         },
         {
-          "name": "RedStone",
+          "name": "RedstoneEcosystemDevelopment Group Ltd,",
           "tier": "General",
           "website": "https://www.redstone.finance/",
-          "description": "Mühlegasse 18, Baar, Zug 6340, Switzerland",
-          "logoPath": "members-assets/redstone.png?v=attZd3lEumtb7VSrE-logo_redstone.png-2656-image-png-2026-07-01T14%3A49%3A16.000Z"
+          "description": "Intershore Chambers, Road Town, Tortola\nBritish Virgin Islands",
+          "logoPath": "members-assets/redstoneecosystemdevelopment-group-ltd.png?v=attZd3lEumtb7VSrE-logo_redstone.png-2656-image-png-2026-09-22T13%3A57%3A39.000Z"
         },
         {
           "name": "Sats Labs Inc.",
@@ -626,14 +626,14 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://www.linkedin.com/company/3106214",
           "description": "371 Hoes Lane\r\nSuite 205\r\nPiscataway, NJ\r\n08854",
-          "logoPath": "members-assets/transcend-street-solutions-inc.png?v=attI051S3UGBE5vBD-download.png-26007-image-png-2026-09-11T19%3A04%3A52.000Z"
+          "logoPath": "members-assets/transcend-street-solutions-inc.png?v=attI051S3UGBE5vBD-download.png-26007-image-png-2026-09-22T22%3A08%3A29.000Z"
         },
         {
           "name": "TRM Labs",
           "tier": "General",
           "website": "https://www.trmlabs.com/",
           "description": "548 Market Street, PMB 85965, San Francisco, California 94104, United States",
-          "logoPath": "members-assets/trm-labs.png?v=att71Of4SwrKhYLe7-logo_trm.png-4243-image-png-2026-09-11T19%3A18%3A48.000Z"
+          "logoPath": "members-assets/trm-labs.png?v=att71Of4SwrKhYLe7-logo_trm.png-4243-image-png-2026-09-25T15%3A39%3A17.000Z"
         },
         {
           "name": "Ubyx Inc",
