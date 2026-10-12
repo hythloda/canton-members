@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-09-28T19:08:01.653Z",
+  "updatedAt": "2026-10-12T20:46:36.899Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -227,7 +227,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://cantor8.io/",
           "description": "14 Tregubter Rd, London, City of London SW10 9LR, United Kingdom",
-          "logoPath": "members-assets/cantor8-technologies.png?v=atttn4Ovqvz5Dnl8j-logo_cantor8.png-2339-image-png-2026-09-14T12%3A47%3A22.000Z"
+          "logoPath": "members-assets/cantor8-technologies.png?v=atttn4Ovqvz5Dnl8j-logo_cantor8.png-2339-image-png-2026-10-06T15%3A04%3A14.000Z"
         },
         {
           "name": "Cashen Labs,  Inc.",
@@ -248,7 +248,7 @@ window.MEMBERS_DATA = {
           "tier": "General",
           "website": "https://chainlinklabs.com/",
           "description": "1250 Broadway 36th Floor, New York, New York 10001, United States",
-          "logoPath": "members-assets/chainlink-labs.png?v=attkqqYlUHnA8dclm-logo_chainlinklabs.png-7673-image-png-2026-09-11T18%3A51%3A06.000Z"
+          "logoPath": "members-assets/chainlink-labs.png?v=attkqqYlUHnA8dclm-logo_chainlinklabs.png-7673-image-png-2026-10-05T20%3A05%3A07.000Z"
         },
         {
           "name": "Chata Technologies Inc",
