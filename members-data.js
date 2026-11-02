@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-11-02T18:29:29.464Z",
+  "updatedAt": "2026-11-02T18:39:52.179Z",
   "source": "monday",
   "intro": "A current view of the member network, refreshed from Monday and organized by membership tier.",
   "tiers": [
