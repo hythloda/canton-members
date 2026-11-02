@@ -11,6 +11,20 @@ This repo now includes a static members directory page at [members.html](/Users/
 
 Downloading the images is important because Airtable attachment download links expire after a short time.
 
+## Members recorded in Monday
+
+The scheduled build still reads the legacy Airtable table. Verified current members
+missing from that table are maintained in `data/members.supplemental.json` and merged
+after each Airtable refresh. Each entry records its Monday source, approval check,
+verification date, and a locally stored approved logo. Aliases prevent duplicate
+entries if the member later appears in Airtable under its legal name.
+
+DLA Piper was verified on November 2, 2026 as a Current Member, Associate tier, with
+PR/Logo Usage set to Yes. Its white SVG is stored in `members-assets/dla-piper.svg`.
+Recheck the Monday record when changing or removing this supplemental entry.
+
+Run the refresh regression checks with `node --test scripts/member-supplements.test.mjs`.
+
 ## Files added
 
 - [members.html](/Users/hal/Documents/member/members.html): rendered page

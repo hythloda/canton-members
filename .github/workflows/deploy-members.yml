@@ -36,6 +36,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "24"
+      - run: node --test scripts/member-supplements.test.mjs
       - run: node scripts/build-members.mjs
       - name: Commit refreshed Airtable data
         run: |

@@ -4,6 +4,7 @@ import fs from "node:fs/promises";
 import fsSync from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { mergeMemberSupplements } from "./member-supplements.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -23,7 +24,8 @@ async function main() {
   const config = getConfig();
   const logoCache = await loadLogoCache();
   const rawMembers = sampleArg ? await loadSampleMembers() : await loadAirtableMembers(config, logoCache);
-  const normalized = normalizeMembers(rawMembers);
+  const supplements = sampleArg ? [] : JSON.parse(await fs.readFile(path.join(rootDir, "data", "members.supplemental.json"), "utf8"));
+  const normalized = normalizeMembers(mergeMemberSupplements(rawMembers, supplements));
   const tiers = buildTiers(normalized);
 
   await fs.mkdir(path.join(rootDir, "members-assets"), { recursive: true });

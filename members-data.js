@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-10-26T18:06:43.468Z",
+  "updatedAt": "2026-11-02T18:16:50.983Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
@@ -689,6 +689,13 @@ window.MEMBERS_DATA = {
           "website": "https://www.decinstitute.org/",
           "description": "DEC Institute\nSuurstoffi 1\n6343 Risch-Rotkreiz\nSwitzerland",
           "logoPath": "members-assets/dec-institute.png?v=attKHNTk5f44LGuFO-image.png-2380-image-png-2026-07-01T14%3A43%3A52.000Z"
+        },
+        {
+          "name": "DLA Piper",
+          "tier": "Associate",
+          "website": "https://www.dlapiper.com/en",
+          "description": "",
+          "logoPath": "members-assets/dla-piper.svg?v=monday-3298408052"
         },
         {
           "name": "Global Blockchain Business Council",
