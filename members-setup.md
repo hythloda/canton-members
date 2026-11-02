@@ -8,6 +8,7 @@ This repo now includes a static members directory page at [members.html](/Users/
 2. Reads the member name, tier, logo, website, description, and optional logo approval fields.
 3. Downloads each approved Airtable logo into `members-assets/`.
 4. Regenerates [members-data.js](/Users/hal/Documents/member/members-data.js), which powers the page.
+5. Versions the page's data script URL so browser caches do not retain a previous member list after a refresh.
 
 Downloading the images is important because Airtable attachment download links expire after a short time.
 

@@ -27,17 +27,26 @@ async function main() {
   const supplements = sampleArg ? [] : JSON.parse(await fs.readFile(path.join(rootDir, "data", "members.supplemental.json"), "utf8"));
   const normalized = normalizeMembers(mergeMemberSupplements(rawMembers, supplements));
   const tiers = buildTiers(normalized);
+  const updatedAt = new Date().toISOString();
 
   await fs.mkdir(path.join(rootDir, "members-assets"), { recursive: true });
   await fs.writeFile(
     path.join(rootDir, "members-data.js"),
     "window.MEMBERS_DATA = " + JSON.stringify({
-      updatedAt: new Date().toISOString(),
+      updatedAt,
       intro: "A current view of the member network, refreshed from Airtable and organized by membership tier.",
       tiers
     }, null, 2) + ";\n",
     "utf8"
   );
+
+  const pagePath = path.join(rootDir, "members.html");
+  const page = await fs.readFile(pagePath, "utf8");
+  const dataScript = /<script src="members-data\.js(?:\?[^"]*)?"><\/script>/;
+  if (!dataScript.test(page)) {
+    throw new Error("Cannot version the member data script in members.html.");
+  }
+  await fs.writeFile(pagePath, page.replace(dataScript, `<script src="members-data.js?v=${Date.parse(updatedAt)}"></script>`), "utf8");
 
   await saveLogoCache(logoCache);
 
