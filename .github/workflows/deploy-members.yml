@@ -18,33 +18,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
-      AIRTABLE_BASE_ID: apptcH0H3OgfKEZzP
-      AIRTABLE_TABLE_ID: tblhhsanKJmjJtXbE
-      AIRTABLE_VIEW: ""
-      AIRTABLE_NAME_FIELD: Member Name
-      AIRTABLE_TIER_FIELD: Type
-      AIRTABLE_LOGO_FIELD: Logo
-      AIRTABLE_LOGO_APPROVED_FIELD: PR/Logo Usage
-      AIRTABLE_APPROVED_VALUES: yes
-      AIRTABLE_WEBSITE_ENABLED_FIELD: ""
-      AIRTABLE_URL_FIELD: Website
-      AIRTABLE_DESCRIPTION_FIELD: Address
+      MONDAY_API_TOKEN: ${{ secrets.MONDAY_API_TOKEN }}
+      MONDAY_API_VERSION: "2026-04"
+      MONDAY_BOARD_ID: "18418382784"
+      MONDAY_GROUP_ID: group_mm7qj8b3
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
       - uses: actions/setup-node@v4
         with:
           node-version: "24"
-      - run: node --test scripts/member-supplements.test.mjs
+      - run: node --test scripts/*.test.mjs
       - run: node scripts/build-members.mjs
-      - name: Commit refreshed Airtable data
+      - name: Commit refreshed Monday data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add members.html members-data.js members-assets .env.members.example scripts/build-members.mjs
           if ! git diff --cached --quiet; then
-            git commit -m "Refresh members data from Airtable"
+            git commit -m "Refresh members data from Monday"
             git push
           fi
       - uses: actions/upload-pages-artifact@v3

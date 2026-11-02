@@ -263,11 +263,11 @@
     <section id="members-content"></section>
 
     <footer class="page-footer">
-      <a href="https://airtable.com/apptcH0H3OgfKEZzP/pagZdLQ8zcqQvqYyM/form" target="_blank" rel="noopener">If something doesn't look right, please submit a request via this form.</a>
+      <a href="mailto:marketing@canton.foundation">For member directory updates, contact marketing@canton.foundation.</a>
     </footer>
   </main>
 
-  <script src="members-data.js?v=1793643616288"></script>
+  <script src="members-data.js?v=1793644169464"></script>
   <script>
     (function () {
       const data = window.MEMBERS_DATA || { updatedAt: null, intro: "", tiers: [] };
@@ -279,8 +279,7 @@
       if (!tiers.length) {
         contentRoot.innerHTML =
           '<div class="empty-state">' +
-            '<p>No members have been generated yet.</p>' +
-            '<p>Run <strong><code>node scripts/build-members.mjs --sample</code></strong> for sample content, or configure Airtable and run <strong><code>node scripts/build-members.mjs</code></strong>.</p>' +
+            '<p>Member information is temporarily unavailable. Please check back soon.</p>' +
           '</div>';
         return;
       }

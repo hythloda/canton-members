@@ -1,136 +1,62 @@
 # Members Directory Setup
 
-This repo now includes a static members directory page at [members.html](/Users/hal/Documents/member/members.html) plus a build script that refreshes its data from Airtable.
+The directory is generated directly from the Monday Members board. Refreshes do not
+call Airtable or use its token, table, attachments, or supplemental member records.
 
-## What the build does
+## Source and publication rules
 
-1. Calls Airtable's Web API for your member table.
-2. Reads the member name, tier, logo, website, description, and optional logo approval fields.
-3. Downloads each approved Airtable logo into `members-assets/`.
-4. Regenerates [members-data.js](/Users/hal/Documents/member/members-data.js), which powers the page.
-5. Versions the page's data script URL so browser caches do not retain a previous member list after a refresh.
+- Board: `18418382784` — [Members](https://canton-foundation.monday.com/boards/18418382784).
+- Group: `group_mm7qj8b3` — Current Members. Applicants and upload staging rows are excluded.
+- Name: the item's canonical member name.
+- Tier: Type (`color_mm891eb8`), which must be Premier, General, or Associate.
+- Logo consent: PR/Logo Usage (`color_mm89z1pw`) must be Yes.
+- Logo file: Logo (`file_mm4ebxv1`). Approved PNG, JPEG, SVG, WebP, GIF, and AVIF images are supported.
+- Website: Website (`text_mm7wwmtm`). Invalid URLs and email addresses are not linked.
 
-Downloading the images is important because Airtable attachment download links expire after a short time.
+Visa Inc. and Lloyds Bank Plc retain the existing name-only publication exceptions:
+their names appear and their logos are never downloaded or displayed. Other members
+without logo consent are excluded. Approved members without supported images appear
+under Members without logos.
 
-## Members recorded in Monday
+The On Website checkbox tracks existing website coverage; it is not a publication
+filter. A newly approved Current Member can appear without that box being checked.
+DLA Piper is now read from its Monday item like every other member; no separate
+supplement is used. Moving a member out of Current Members or withdrawing consent
+removes it on the next successful refresh (apart from the two name-only exceptions).
 
-The scheduled build still reads the legacy Airtable table. Verified current members
-missing from that table are maintained in `data/members.supplemental.json` and merged
-after each Airtable refresh. Each entry records its Monday source, approval check,
-verification date, and a locally stored approved logo. Aliases prevent duplicate
-entries if the member later appears in Airtable under its legal name.
+Only names, tiers, websites, and approved logos are written to the public directory.
+Contact details, agreements, invoices, and temporary signed download URLs are not
+published. The script downloads approved images locally because Monday's public asset
+URLs expire after one hour.
 
-DLA Piper was verified on November 2, 2026 as a Current Member, Associate tier, with
-PR/Logo Usage set to Yes. Its white SVG is stored in `members-assets/dla-piper.svg`.
-Recheck the Monday record when changing or removing this supplemental entry.
+## Scheduled automation
 
-Run the refresh regression checks with `node --test scripts/member-supplements.test.mjs`.
+`.github/workflows/deploy-members.yml` runs every Monday at 12:00 UTC, retaining the
+existing schedule. It can also be started manually using Run workflow under Actions.
+Each run tests the sync, reads every page of Monday items, downloads current approved
+logos, regenerates `members-data.js`, versions the page's data URL, commits updates,
+and deploys to GitHub Pages.
 
-## Files added
+Add a GitHub Actions repository secret named `MONDAY_API_TOKEN` at
+[repository secrets](https://github.com/hythloda/canton-members/settings/secrets/actions).
+The token must have read access to the Members board and its logo assets. Never put
+the token in source or public data. The old Airtable secret is no longer referenced.
 
-- [members.html](/Users/hal/Documents/member/members.html): rendered page
-- [members-data.js](/Users/hal/Documents/member/members-data.js): generated member data used by the page
-- [scripts/build-members.mjs](/Users/hal/Documents/member/scripts/build-members.mjs): Airtable fetch + asset download script
-- [scripts/refresh-members.sh](/Users/hal/Documents/member/scripts/refresh-members.sh): small wrapper for cron
-- [.env.members.example](/Users/hal/Documents/member/.env.members.example): config template
+Missing credentials, API errors, missing groups or columns, invalid tiers, empty
+results, and failed downloads stop deployment so the last successful directory stays
+live. There is no fallback to Airtable or to the previous DLA supplement.
 
-## Airtable setup
+## Local refresh and tests
 
-Use the Airtable Web API, not the public shared-view URL directly.
-
-The shared link you gave uses base ID `apptcH0H3OgfKEZzP`, but the script also needs:
-
-- A personal access token with read access to the base
-- The table name or table ID
-- Optionally the view name if you only want one filtered view
-
-Recommended Airtable fields:
-
-- `Member Name`
-- `Type`
-- `Logo`
-- `On Website`
-- `PR/Logo Usage`
-- `Website`
-- `Address`
-
-Create your local config file:
+Copy `.env.members.example` to the ignored `.env.members` file and enter the Monday
+token there. The board, group, column IDs, API version, and name-only exceptions can be
+overridden using the documented environment variables.
 
 ```bash
-cp .env.members.example .env.members
-```
-
-Then edit `.env.members` and set:
-
-```env
-AIRTABLE_TOKEN=pat_your_token_here
-AIRTABLE_BASE_ID=apptcH0H3OgfKEZzP
-AIRTABLE_TABLE_ID=tblhhsanKJmjJtXbE
-AIRTABLE_VIEW=viwYufMoBg9Km6dQl
-AIRTABLE_NAME_FIELD=Member Name
-AIRTABLE_TIER_FIELD=Type
-AIRTABLE_LOGO_FIELD=Logo
-AIRTABLE_LOGO_APPROVED_FIELD=PR/Logo Usage
-AIRTABLE_APPROVED_VALUES=approved,approve,yes,true,1
-AIRTABLE_WEBSITE_ENABLED_FIELD=On Website
-AIRTABLE_WEBSITE_ENABLED_VALUES=true,yes,1,checked,on
-AIRTABLE_URL_FIELD=Website
-AIRTABLE_DESCRIPTION_FIELD=Address
-```
-
-The script now assumes:
-
-- only rows with `On Website` checked should appear
-- only rows with `PR/Logo Usage` matching an approved value should show and download logos
-
-If your `PR/Logo Usage` select uses a different value than `approved` or `yes`, update `AIRTABLE_APPROVED_VALUES`.
-
-## Running it
-
-Test the page with sample content:
-
-```bash
-node scripts/build-members.mjs --sample
-```
-
-Run against Airtable:
-
-```bash
+node --test scripts/*.test.mjs
 node scripts/build-members.mjs
 ```
 
-Open the page in a browser:
-
-```bash
-open members.html
-```
-
-## Weekly cron job
-
-Make the wrapper executable once:
-
-```bash
-chmod +x scripts/refresh-members.sh
-```
-
-Open your crontab:
-
-```bash
-crontab -e
-```
-
-Example: refresh every Monday at 8:00 AM local time:
-
-```cron
-0 8 * * 1 /Users/hal/Documents/member/scripts/refresh-members.sh >> /Users/hal/Documents/member/members-refresh.log 2>&1
-```
-
-## Important note about the Airtable link
-
-Your shared Airtable URL is useful for viewing the data, but it is not the stable integration target for a website build. The supported approach is:
-
-1. Get Airtable base access or a token with access to the base.
-2. Pull records through the Web API.
-3. Download attachment files during each refresh.
-
-If you want, the same logic can also be moved into Google Apps Script later, but the local cron version is the simplest and most reliable setup for this repo.
+`node scripts/build-members.mjs --sample` builds the isolated sample dataset without
+credentials or network access. `scripts/refresh-members.sh` remains a wrapper for a
+local cron job. The GitHub workflow runs independently of that local setup.
