@@ -4,7 +4,7 @@ import fs from "node:fs/promises";
 import fsSync from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { mergeMemberSupplements } from "./member-supplements.mjs";
+import { getMondayConfig, loadMondayMembers } from "./monday-members.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,20 +21,22 @@ async function main() {
     }
   }
 
-  const config = getConfig();
+  const config = getMondayConfig();
   const logoCache = await loadLogoCache();
-  const rawMembers = sampleArg ? await loadSampleMembers() : await loadAirtableMembers(config, logoCache);
-  const supplements = sampleArg ? [] : JSON.parse(await fs.readFile(path.join(rootDir, "data", "members.supplemental.json"), "utf8"));
-  const normalized = normalizeMembers(mergeMemberSupplements(rawMembers, supplements));
+  await fs.mkdir(path.join(rootDir, "members-assets"), { recursive: true });
+  const rawMembers = sampleArg ? await loadSampleMembers() : await loadMondayMembers(config, {
+    storeLogo: (attachment, name, id) => downloadLogo(attachment, name, id, buildLogoVersion(attachment, null, id), logoCache)
+  });
+  const normalized = normalizeMembers(rawMembers);
   const tiers = buildTiers(normalized);
   const updatedAt = new Date().toISOString();
 
-  await fs.mkdir(path.join(rootDir, "members-assets"), { recursive: true });
   await fs.writeFile(
     path.join(rootDir, "members-data.js"),
     "window.MEMBERS_DATA = " + JSON.stringify({
       updatedAt,
-      intro: "A current view of the member network, refreshed from Airtable and organized by membership tier.",
+      source: sampleArg ? "sample" : "monday",
+      intro: "A current view of the member network, refreshed from Monday and organized by membership tier.",
       tiers
     }, null, 2) + ";\n",
     "utf8"
@@ -53,118 +55,10 @@ async function main() {
   console.log(`Wrote members-data.js with ${normalized.length} members across ${tiers.length} tiers.`);
 }
 
-function getConfig() {
-  return {
-    token: process.env.AIRTABLE_TOKEN || "",
-    baseId: process.env.AIRTABLE_BASE_ID || "",
-    tableId: process.env.AIRTABLE_TABLE_ID || "",
-    view: process.env.AIRTABLE_VIEW || "",
-    nameField: process.env.AIRTABLE_NAME_FIELD || "Member Name",
-    tierField: process.env.AIRTABLE_TIER_FIELD || "Type",
-    logoField: process.env.AIRTABLE_LOGO_FIELD || "Logo",
-    logoModifiedField: process.env.AIRTABLE_LOGO_MODIFIED_FIELD || "Modified",
-    logoApprovedField: process.env.AIRTABLE_LOGO_APPROVED_FIELD || process.env.AIRTABLE_APPROVED_FIELD || "PR/Logo Usage",
-    websiteEnabledField: process.env.AIRTABLE_WEBSITE_ENABLED_FIELD || "",
-    urlField: process.env.AIRTABLE_URL_FIELD || "Website",
-    descriptionField: process.env.AIRTABLE_DESCRIPTION_FIELD || "Address",
-    forcedNoLogoIncludeMembers: new Set(
-      (process.env.AIRTABLE_FORCE_NO_LOGO_INCLUDE_MEMBERS || "Visa Inc.|Lloyds Bank Plc")
-        .split("|")
-        .map((value) => value.trim())
-        .filter(Boolean)
-    ),
-    approvedValues: (process.env.AIRTABLE_APPROVED_VALUES || "yes")
-      .split(",")
-      .map((value) => value.trim().toLowerCase())
-      .filter(Boolean),
-    websiteEnabledValues: (process.env.AIRTABLE_WEBSITE_ENABLED_VALUES || "true,yes,1,checked,on")
-      .split(",")
-      .map((value) => value.trim().toLowerCase())
-      .filter(Boolean)
-  };
-}
-
 async function loadSampleMembers() {
   const samplePath = path.join(rootDir, "data", "members.sample.json");
   const contents = await fs.readFile(samplePath, "utf8");
   return JSON.parse(contents);
-}
-
-async function loadAirtableMembers(config, logoCache) {
-  const missing = [];
-
-  if (!config.token) missing.push("AIRTABLE_TOKEN");
-  if (!config.baseId) missing.push("AIRTABLE_BASE_ID");
-  if (!config.tableId) missing.push("AIRTABLE_TABLE_ID");
-
-  if (missing.length) {
-    throw new Error("Missing required Airtable configuration: " + missing.join(", "));
-  }
-
-  const params = new URLSearchParams({ pageSize: "100" });
-
-  if (config.view) {
-    params.set("view", config.view);
-  }
-
-  const allRecords = [];
-  let offset = "";
-
-  do {
-    if (offset) {
-      params.set("offset", offset);
-    } else {
-      params.delete("offset");
-    }
-
-    const url = `https://api.airtable.com/v0/${encodeURIComponent(config.baseId)}/${encodeURIComponent(config.tableId)}?${params.toString()}`;
-    const response = await fetch(url, {
-      headers: {
-        Authorization: `Bearer ${config.token}`
-      }
-    });
-
-    if (!response.ok) {
-      const details = await safeText(response);
-      throw new Error(`Airtable request failed (${response.status}): ${details}`);
-    }
-
-    const payload = await response.json();
-
-    for (const record of payload.records || []) {
-      allRecords.push(await mapRecord(record, config, logoCache));
-    }
-
-    offset = payload.offset || "";
-  } while (offset);
-
-  return allRecords;
-}
-
-async function mapRecord(record, config, logoCache) {
-  const fields = record.fields || {};
-  const onWebsite = isApproved(fields[config.websiteEnabledField], config.websiteEnabledValues);
-
-  if (config.websiteEnabledField && !onWebsite) {
-    return null;
-  }
-
-  const name = toText(fields[config.nameField]) || "Untitled member";
-  const logoApproved = isApproved(fields[config.logoApprovedField], config.approvedValues);
-  const forcedNoLogoInclude = config.forcedNoLogoIncludeMembers.has(name);
-
-  if (config.logoApprovedField && !logoApproved && !forcedNoLogoInclude) {
-    return null;
-  }
-
-  const tier = toText(fields[config.tierField]) || "General";
-  const website = normalizeUrl(toText(fields[config.urlField]));
-  const description = toText(fields[config.descriptionField]);
-  const attachment = forcedNoLogoInclude ? null : (Array.isArray(fields[config.logoField]) ? fields[config.logoField][0] : null);
-  const logoVersion = buildLogoVersion(attachment, fields[config.logoModifiedField], record.id);
-  const logoPath = await downloadLogo(attachment, name, record.id, logoVersion, logoCache);
-
-  return { name, tier, website, description, logoPath };
 }
 
 async function downloadLogo(attachment, memberName, recordId, logoVersion, logoCache) {
@@ -274,12 +168,6 @@ function toText(value) {
   return "";
 }
 
-function normalizeUrl(value) {
-  if (!value) return "";
-  if (/^https?:\/\//i.test(value)) return value;
-  return `https://${value}`;
-}
-
 async function loadLogoCache() {
   try {
     const contents = await fs.readFile(logoCachePath, "utf8");
@@ -322,23 +210,6 @@ function withVersion(relativePath, version) {
   return version ? `${relativePath}?v=${encodeURIComponent(version)}` : relativePath;
 }
 
-
-function isApproved(value, approvedValues) {
-  if (value === undefined || value === null || value === "") {
-    return false;
-  }
-
-  if (typeof value === "boolean") {
-    return value;
-  }
-
-  if (typeof value === "number") {
-    return value === 1;
-  }
-
-  const normalized = toText(value).toLowerCase();
-  return approvedValues.includes(normalized);
-}
 
 function slugify(value) {
   return String(value)
@@ -396,14 +267,6 @@ async function loadEnvFile(filePath) {
     }
 
     throw error;
-  }
-}
-
-async function safeText(response) {
-  try {
-    return await response.text();
-  } catch {
-    return response.statusText || "Unknown error";
   }
 }
 
