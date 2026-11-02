@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-11-02T18:19:44.213Z",
+  "updatedAt": "2026-11-02T18:20:16.288Z",
   "intro": "A current view of the member network, refreshed from Airtable and organized by membership tier.",
   "tiers": [
     {
