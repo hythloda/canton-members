@@ -101,6 +101,8 @@ test("API failures and missing credentials cannot silently produce an empty dire
   await assert.rejects(loadMondayMembers(getMondayConfig({}), { fetchImpl: async () => assert.fail("Missing token should fail before HTTP"), storeLogo }), /MONDAY_API_TOKEN/);
   await assert.rejects(loadMondayMembers(config, { fetchImpl: async () => ({ ok: false, status: 401 }), storeLogo }), /401/);
   await assert.rejects(loadMondayMembers(config, { fetchImpl: async () => ({ ok: true, json: async () => ({ errors: [{ message: "Access denied" }] }) }), storeLogo }), /Access denied/);
+  await assert.rejects(loadMondayMembers(config, { fetchImpl: async () => ({ ok: true, json: async () => ({ error_code: "NOT_AUTHENTICATED", error_message: "Not authenticated" }) }), storeLogo }), /NOT_AUTHENTICATED/);
+  await assert.rejects(loadMondayMembers(config, { fetchImpl: async () => ({ ok: true, json: async () => ({ errors: { message: "Access denied" } }) }), storeLogo }), /Access denied/);
   await assert.rejects(loadMondayMembers(config, { fetchImpl: async () => response(board([])), storeLogo }), /no publishable/);
 });
 

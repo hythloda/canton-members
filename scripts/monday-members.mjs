@@ -57,11 +57,18 @@ export async function loadMondayMembers(config, { fetchImpl = fetch, storeLogo }
     });
     if (!response.ok) throw new Error(`Monday request failed (${response.status}).`);
     const payload = await response.json();
-    if (payload.errors?.length) {
-      throw new Error("Monday request failed: " + payload.errors.map((error) => error.message).join("; "));
+    if (payload.error_message || payload.error_code) {
+      throw new Error(`Monday request failed: ${payload.error_code || "API_ERROR"} — ${payload.error_message || "No error description returned"}`);
+    }
+    if (payload.errors) {
+      const errors = Array.isArray(payload.errors) ? payload.errors : [payload.errors];
+      if (errors.length) throw new Error("Monday request failed: " + errors.map((error) => error.message || "Unknown API error").join("; "));
     }
     const board = payload.data?.boards?.find((entry) => String(entry.id) === String(config.boardId));
-    if (!board) throw new Error(`Monday board ${config.boardId} was not returned. Check the token's board access.`);
+    if (!board) {
+      const details = payload.data?.boards ? "The token cannot see the configured board." : `Response fields: ${Object.keys(payload).join(", ") || "none"}.`;
+      throw new Error(`Monday board ${config.boardId} was not returned. ${details} Check the token's board access.`);
+    }
     if (!board.groups?.some((group) => group.id === config.groupId)) {
       throw new Error("The configured Current Members group was not returned by Monday.");
     }
