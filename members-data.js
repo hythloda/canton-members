@@ -1,5 +1,5 @@
 window.MEMBERS_DATA = {
-  "updatedAt": "2026-11-16T21:31:30.318Z",
+  "updatedAt": "2026-11-23T23:14:13.965Z",
   "source": "monday",
   "intro": "A current view of the member network, refreshed from Monday and organized by membership tier.",
   "tiers": [
@@ -369,6 +369,13 @@ window.MEMBERS_DATA = {
           "website": "https://www.fpblock.com/",
           "description": "",
           "logoPath": "members-assets/fp-complete-corporation.svg?v=3298384551-fp-block-logo.svg-523-image-svg-xml"
+        },
+        {
+          "name": "FTP Tech LLC",
+          "tier": "General",
+          "website": "https://www.ftptech.xyz/",
+          "description": "",
+          "logoPath": "members-assets/ftp-tech-llc.svg?v=3392544330-logo_ftp2_black.svg-226960-image-svg-xml"
         },
         {
           "name": "Galaxy Digital",
